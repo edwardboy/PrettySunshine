@@ -7,14 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE44DEAE1D235AA8003CCEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEAD1D235AA8003CCEF6 /* main.m */; };
-		EE44DEB11D235AA8003CCEF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEB01D235AA8003CCEF6 /* AppDelegate.m */; };
-		EE44DEB41D235AA8003CCEF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEB31D235AA8003CCEF6 /* ViewController.m */; };
-		EE44DEB71D235AA8003CCEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE44DEB51D235AA8003CCEF6 /* Main.storyboard */; };
-		EE44DEB91D235AA8003CCEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44DEB81D235AA8003CCEF6 /* Assets.xcassets */; };
-		EE44DEBC1D235AA8003CCEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE44DEBA1D235AA8003CCEF6 /* LaunchScreen.storyboard */; };
 		EE44DEC71D235AA8003CCEF6 /* PrettySunshineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */; };
 		EE44DED21D235AA8003CCEF6 /* PrettySunshineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DED11D235AA8003CCEF6 /* PrettySunshineUITests.m */; };
+		EE44DF1F1D235F90003CCEF6 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE11D235F90003CCEF6 /* DiscoverViewController.m */; };
+		EE44DF201D235F90003CCEF6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE41D235F90003CCEF6 /* HomeViewController.m */; };
+		EE44DF211D235F90003CCEF6 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE91D235F90003CCEF6 /* FAImageView.m */; };
+		EE44DF221D235F90003CCEF6 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEEB1D235F90003CCEF6 /* NSString+FontAwesome.m */; };
+		EE44DF231D235F90003CCEF6 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEED1D235F90003CCEF6 /* UIFont+FontAwesome.m */; };
+		EE44DF241D235F90003CCEF6 /* UIImage+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEEF1D235F90003CCEF6 /* UIImage+FontAwesome.m */; };
+		EE44DF251D235F90003CCEF6 /* NSDate+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEF11D235F90003CCEF6 /* NSDate+Util.m */; };
+		EE44DF261D235F90003CCEF6 /* NSDateFormatter+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEF31D235F90003CCEF6 /* NSDateFormatter+Singleton.m */; };
+		EE44DF271D235F90003CCEF6 /* NSString+pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEF51D235F90003CCEF6 /* NSString+pinyin.m */; };
+		EE44DF281D235F90003CCEF6 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEF71D235F90003CCEF6 /* NSString+Util.m */; };
+		EE44DF291D235F90003CCEF6 /* NSTextAttachment+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEF91D235F90003CCEF6 /* NSTextAttachment+Util.m */; };
+		EE44DF2A1D235F90003CCEF6 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEFB1D235F90003CCEF6 /* UIBarButtonItem+Badge.m */; };
+		EE44DF2B1D235F90003CCEF6 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEFD1D235F90003CCEF6 /* UIButton+Badge.m */; };
+		EE44DF2C1D235F90003CCEF6 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEFF1D235F90003CCEF6 /* UIColor+Util.m */; };
+		EE44DF2D1D235F90003CCEF6 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF011D235F90003CCEF6 /* UIImage+Util.m */; };
+		EE44DF2E1D235F90003CCEF6 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF031D235F90003CCEF6 /* UIImageView+LBBlurredImage.m */; };
+		EE44DF2F1D235F90003CCEF6 /* UIScrollView+ScalableCover.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF051D235F90003CCEF6 /* UIScrollView+ScalableCover.m */; };
+		EE44DF301D235F90003CCEF6 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF071D235F90003CCEF6 /* UIView+Util.m */; };
+		EE44DF311D235F90003CCEF6 /* EDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF0A1D235F90003CCEF6 /* EDTabBarController.m */; };
+		EE44DF321D235F90003CCEF6 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF0D1D235F90003CCEF6 /* NewsViewController.m */; };
+		EE44DF331D235F90003CCEF6 /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF101D235F90003CCEF6 /* PopView.m */; };
+		EE44DF341D235F90003CCEF6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF131D235F90003CCEF6 /* ProfileViewController.m */; };
+		EE44DF351D235F90003CCEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44DF151D235F90003CCEF6 /* Assets.xcassets */; };
+		EE44DF361D235F90003CCEF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF181D235F90003CCEF6 /* AppDelegate.m */; };
+		EE44DF371D235F90003CCEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE44DF191D235F90003CCEF6 /* LaunchScreen.storyboard */; };
+		EE44DF381D235F90003CCEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE44DF1B1D235F90003CCEF6 /* Main.storyboard */; };
+		EE44DF391D235F90003CCEF6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE44DF1D1D235F90003CCEF6 /* Info.plist */; };
+		EE44DF3A1D235F90003CCEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF1E1D235F90003CCEF6 /* main.m */; };
+		EE44DF401D2363C5003CCEF6 /* AnimateSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF3F1D2363C5003CCEF6 /* AnimateSwitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +59,66 @@
 
 /* Begin PBXFileReference section */
 		EE44DEA91D235AA8003CCEF6 /* PrettySunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettySunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE44DEAD1D235AA8003CCEF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EE44DEAF1D235AA8003CCEF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EE44DEB01D235AA8003CCEF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EE44DEB21D235AA8003CCEF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EE44DEB31D235AA8003CCEF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EE44DEB61D235AA8003CCEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE44DEB81D235AA8003CCEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE44DEBB1D235AA8003CCEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EE44DEBD1D235AA8003CCEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE44DEC21D235AA8003CCEF6 /* PrettySunshineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettySunshineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrettySunshineTests.m; sourceTree = "<group>"; };
 		EE44DEC81D235AA8003CCEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE44DECD1D235AA8003CCEF6 /* PrettySunshineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettySunshineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DED11D235AA8003CCEF6 /* PrettySunshineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrettySunshineUITests.m; sourceTree = "<group>"; };
 		EE44DED31D235AA8003CCEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE44DEE01D235F90003CCEF6 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		EE44DEE11D235F90003CCEF6 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		EE44DEE31D235F90003CCEF6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EE44DEE41D235F90003CCEF6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EE44DEE81D235F90003CCEF6 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		EE44DEE91D235F90003CCEF6 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		EE44DEEA1D235F90003CCEF6 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		EE44DEEB1D235F90003CCEF6 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		EE44DEEC1D235F90003CCEF6 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		EE44DEED1D235F90003CCEF6 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		EE44DEEE1D235F90003CCEF6 /* UIImage+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FontAwesome.h"; sourceTree = "<group>"; };
+		EE44DEEF1D235F90003CCEF6 /* UIImage+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FontAwesome.m"; sourceTree = "<group>"; };
+		EE44DEF01D235F90003CCEF6 /* NSDate+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Util.h"; sourceTree = "<group>"; };
+		EE44DEF11D235F90003CCEF6 /* NSDate+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Util.m"; sourceTree = "<group>"; };
+		EE44DEF21D235F90003CCEF6 /* NSDateFormatter+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Singleton.h"; sourceTree = "<group>"; };
+		EE44DEF31D235F90003CCEF6 /* NSDateFormatter+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Singleton.m"; sourceTree = "<group>"; };
+		EE44DEF41D235F90003CCEF6 /* NSString+pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+pinyin.h"; sourceTree = "<group>"; };
+		EE44DEF51D235F90003CCEF6 /* NSString+pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+pinyin.m"; sourceTree = "<group>"; };
+		EE44DEF61D235F90003CCEF6 /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
+		EE44DEF71D235F90003CCEF6 /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		EE44DEF81D235F90003CCEF6 /* NSTextAttachment+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextAttachment+Util.h"; sourceTree = "<group>"; };
+		EE44DEF91D235F90003CCEF6 /* NSTextAttachment+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextAttachment+Util.m"; sourceTree = "<group>"; };
+		EE44DEFA1D235F90003CCEF6 /* UIBarButtonItem+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Badge.h"; sourceTree = "<group>"; };
+		EE44DEFB1D235F90003CCEF6 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
+		EE44DEFC1D235F90003CCEF6 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		EE44DEFD1D235F90003CCEF6 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
+		EE44DEFE1D235F90003CCEF6 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		EE44DEFF1D235F90003CCEF6 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		EE44DF001D235F90003CCEF6 /* UIImage+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Util.h"; sourceTree = "<group>"; };
+		EE44DF011D235F90003CCEF6 /* UIImage+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
+		EE44DF021D235F90003CCEF6 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		EE44DF031D235F90003CCEF6 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		EE44DF041D235F90003CCEF6 /* UIScrollView+ScalableCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScalableCover.h"; sourceTree = "<group>"; };
+		EE44DF051D235F90003CCEF6 /* UIScrollView+ScalableCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScalableCover.m"; sourceTree = "<group>"; };
+		EE44DF061D235F90003CCEF6 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
+		EE44DF071D235F90003CCEF6 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		EE44DF091D235F90003CCEF6 /* EDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTabBarController.h; sourceTree = "<group>"; };
+		EE44DF0A1D235F90003CCEF6 /* EDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTabBarController.m; sourceTree = "<group>"; };
+		EE44DF0C1D235F90003CCEF6 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		EE44DF0D1D235F90003CCEF6 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		EE44DF0F1D235F90003CCEF6 /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
+		EE44DF101D235F90003CCEF6 /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
+		EE44DF121D235F90003CCEF6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		EE44DF131D235F90003CCEF6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		EE44DF151D235F90003CCEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE44DF171D235F90003CCEF6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE44DF181D235F90003CCEF6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE44DF1A1D235F90003CCEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE44DF1C1D235F90003CCEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE44DF1D1D235F90003CCEF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE44DF1E1D235F90003CCEF6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE44DF3B1D23628D003CCEF6 /* Custom.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Custom.pch; sourceTree = "<group>"; };
+		EE44DF3E1D2363C5003CCEF6 /* AnimateSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateSwitch.h; sourceTree = "<group>"; };
+		EE44DF3F1D2363C5003CCEF6 /* AnimateSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateSwitch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,25 +169,16 @@
 		EE44DEAB1D235AA8003CCEF6 /* PrettySunshine */ = {
 			isa = PBXGroup;
 			children = (
-				EE44DEAF1D235AA8003CCEF6 /* AppDelegate.h */,
-				EE44DEB01D235AA8003CCEF6 /* AppDelegate.m */,
-				EE44DEB21D235AA8003CCEF6 /* ViewController.h */,
-				EE44DEB31D235AA8003CCEF6 /* ViewController.m */,
-				EE44DEB51D235AA8003CCEF6 /* Main.storyboard */,
-				EE44DEB81D235AA8003CCEF6 /* Assets.xcassets */,
-				EE44DEBA1D235AA8003CCEF6 /* LaunchScreen.storyboard */,
-				EE44DEBD1D235AA8003CCEF6 /* Info.plist */,
-				EE44DEAC1D235AA8003CCEF6 /* Supporting Files */,
+				EE44DEDF1D235F90003CCEF6 /* Discover */,
+				EE44DEE21D235F90003CCEF6 /* Home */,
+				EE44DEE51D235F90003CCEF6 /* Main */,
+				EE44DF0B1D235F90003CCEF6 /* News */,
+				EE44DF0E1D235F90003CCEF6 /* Plus */,
+				EE44DF111D235F90003CCEF6 /* Profile */,
+				EE44DF141D235F90003CCEF6 /* Resources */,
+				EE44DF161D235F90003CCEF6 /* SupportingFile */,
 			);
 			path = PrettySunshine;
-			sourceTree = "<group>";
-		};
-		EE44DEAC1D235AA8003CCEF6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EE44DEAD1D235AA8003CCEF6 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		EE44DEC51D235AA8003CCEF6 /* PrettySunshineTests */ = {
@@ -138,6 +197,156 @@
 				EE44DED31D235AA8003CCEF6 /* Info.plist */,
 			);
 			path = PrettySunshineUITests;
+			sourceTree = "<group>";
+		};
+		EE44DEDF1D235F90003CCEF6 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DEE01D235F90003CCEF6 /* DiscoverViewController.h */,
+				EE44DEE11D235F90003CCEF6 /* DiscoverViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		EE44DEE21D235F90003CCEF6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DEE31D235F90003CCEF6 /* HomeViewController.h */,
+				EE44DEE41D235F90003CCEF6 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE44DEE51D235F90003CCEF6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DF3C1D23639D003CCEF6 /* Model */,
+				EE44DF3D1D23639D003CCEF6 /* View */,
+				EE44DEE61D235F90003CCEF6 /* Categories */,
+				EE44DF081D235F90003CCEF6 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EE44DEE61D235F90003CCEF6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DEE71D235F90003CCEF6 /* FontAwesome */,
+				EE44DEF01D235F90003CCEF6 /* NSDate+Util.h */,
+				EE44DEF11D235F90003CCEF6 /* NSDate+Util.m */,
+				EE44DEF21D235F90003CCEF6 /* NSDateFormatter+Singleton.h */,
+				EE44DEF31D235F90003CCEF6 /* NSDateFormatter+Singleton.m */,
+				EE44DEF41D235F90003CCEF6 /* NSString+pinyin.h */,
+				EE44DEF51D235F90003CCEF6 /* NSString+pinyin.m */,
+				EE44DEF61D235F90003CCEF6 /* NSString+Util.h */,
+				EE44DEF71D235F90003CCEF6 /* NSString+Util.m */,
+				EE44DEF81D235F90003CCEF6 /* NSTextAttachment+Util.h */,
+				EE44DEF91D235F90003CCEF6 /* NSTextAttachment+Util.m */,
+				EE44DEFA1D235F90003CCEF6 /* UIBarButtonItem+Badge.h */,
+				EE44DEFB1D235F90003CCEF6 /* UIBarButtonItem+Badge.m */,
+				EE44DEFC1D235F90003CCEF6 /* UIButton+Badge.h */,
+				EE44DEFD1D235F90003CCEF6 /* UIButton+Badge.m */,
+				EE44DEFE1D235F90003CCEF6 /* UIColor+Util.h */,
+				EE44DEFF1D235F90003CCEF6 /* UIColor+Util.m */,
+				EE44DF001D235F90003CCEF6 /* UIImage+Util.h */,
+				EE44DF011D235F90003CCEF6 /* UIImage+Util.m */,
+				EE44DF021D235F90003CCEF6 /* UIImageView+LBBlurredImage.h */,
+				EE44DF031D235F90003CCEF6 /* UIImageView+LBBlurredImage.m */,
+				EE44DF041D235F90003CCEF6 /* UIScrollView+ScalableCover.h */,
+				EE44DF051D235F90003CCEF6 /* UIScrollView+ScalableCover.m */,
+				EE44DF061D235F90003CCEF6 /* UIView+Util.h */,
+				EE44DF071D235F90003CCEF6 /* UIView+Util.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EE44DEE71D235F90003CCEF6 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DEE81D235F90003CCEF6 /* FAImageView.h */,
+				EE44DEE91D235F90003CCEF6 /* FAImageView.m */,
+				EE44DEEA1D235F90003CCEF6 /* NSString+FontAwesome.h */,
+				EE44DEEB1D235F90003CCEF6 /* NSString+FontAwesome.m */,
+				EE44DEEC1D235F90003CCEF6 /* UIFont+FontAwesome.h */,
+				EE44DEED1D235F90003CCEF6 /* UIFont+FontAwesome.m */,
+				EE44DEEE1D235F90003CCEF6 /* UIImage+FontAwesome.h */,
+				EE44DEEF1D235F90003CCEF6 /* UIImage+FontAwesome.m */,
+			);
+			path = FontAwesome;
+			sourceTree = "<group>";
+		};
+		EE44DF081D235F90003CCEF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DF091D235F90003CCEF6 /* EDTabBarController.h */,
+				EE44DF0A1D235F90003CCEF6 /* EDTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE44DF0B1D235F90003CCEF6 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DF0C1D235F90003CCEF6 /* NewsViewController.h */,
+				EE44DF0D1D235F90003CCEF6 /* NewsViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		EE44DF0E1D235F90003CCEF6 /* Plus */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DF0F1D235F90003CCEF6 /* PopView.h */,
+				EE44DF101D235F90003CCEF6 /* PopView.m */,
+			);
+			path = Plus;
+			sourceTree = "<group>";
+		};
+		EE44DF111D235F90003CCEF6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DF121D235F90003CCEF6 /* ProfileViewController.h */,
+				EE44DF131D235F90003CCEF6 /* ProfileViewController.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EE44DF141D235F90003CCEF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DF151D235F90003CCEF6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE44DF161D235F90003CCEF6 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DF3B1D23628D003CCEF6 /* Custom.pch */,
+				EE44DF171D235F90003CCEF6 /* AppDelegate.h */,
+				EE44DF181D235F90003CCEF6 /* AppDelegate.m */,
+				EE44DF191D235F90003CCEF6 /* LaunchScreen.storyboard */,
+				EE44DF1B1D235F90003CCEF6 /* Main.storyboard */,
+				EE44DF1D1D235F90003CCEF6 /* Info.plist */,
+				EE44DF1E1D235F90003CCEF6 /* main.m */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		EE44DF3C1D23639D003CCEF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE44DF3D1D23639D003CCEF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE44DF3E1D2363C5003CCEF6 /* AnimateSwitch.h */,
+				EE44DF3F1D2363C5003CCEF6 /* AnimateSwitch.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +416,7 @@
 				TargetAttributes = {
 					EE44DEA81D235AA8003CCEF6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WZ29ULHSK9;
 					};
 					EE44DEC11D235AA8003CCEF6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -243,9 +453,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE44DEBC1D235AA8003CCEF6 /* LaunchScreen.storyboard in Resources */,
-				EE44DEB91D235AA8003CCEF6 /* Assets.xcassets in Resources */,
-				EE44DEB71D235AA8003CCEF6 /* Main.storyboard in Resources */,
+				EE44DF391D235F90003CCEF6 /* Info.plist in Resources */,
+				EE44DF381D235F90003CCEF6 /* Main.storyboard in Resources */,
+				EE44DF351D235F90003CCEF6 /* Assets.xcassets in Resources */,
+				EE44DF371D235F90003CCEF6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +481,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE44DEB41D235AA8003CCEF6 /* ViewController.m in Sources */,
-				EE44DEB11D235AA8003CCEF6 /* AppDelegate.m in Sources */,
-				EE44DEAE1D235AA8003CCEF6 /* main.m in Sources */,
+				EE44DF361D235F90003CCEF6 /* AppDelegate.m in Sources */,
+				EE44DF331D235F90003CCEF6 /* PopView.m in Sources */,
+				EE44DF301D235F90003CCEF6 /* UIView+Util.m in Sources */,
+				EE44DF2B1D235F90003CCEF6 /* UIButton+Badge.m in Sources */,
+				EE44DF221D235F90003CCEF6 /* NSString+FontAwesome.m in Sources */,
+				EE44DF2D1D235F90003CCEF6 /* UIImage+Util.m in Sources */,
+				EE44DF211D235F90003CCEF6 /* FAImageView.m in Sources */,
+				EE44DF2C1D235F90003CCEF6 /* UIColor+Util.m in Sources */,
+				EE44DF241D235F90003CCEF6 /* UIImage+FontAwesome.m in Sources */,
+				EE44DF341D235F90003CCEF6 /* ProfileViewController.m in Sources */,
+				EE44DF401D2363C5003CCEF6 /* AnimateSwitch.m in Sources */,
+				EE44DF321D235F90003CCEF6 /* NewsViewController.m in Sources */,
+				EE44DF271D235F90003CCEF6 /* NSString+pinyin.m in Sources */,
+				EE44DF1F1D235F90003CCEF6 /* DiscoverViewController.m in Sources */,
+				EE44DF231D235F90003CCEF6 /* UIFont+FontAwesome.m in Sources */,
+				EE44DF2A1D235F90003CCEF6 /* UIBarButtonItem+Badge.m in Sources */,
+				EE44DF201D235F90003CCEF6 /* HomeViewController.m in Sources */,
+				EE44DF311D235F90003CCEF6 /* EDTabBarController.m in Sources */,
+				EE44DF281D235F90003CCEF6 /* NSString+Util.m in Sources */,
+				EE44DF2F1D235F90003CCEF6 /* UIScrollView+ScalableCover.m in Sources */,
+				EE44DF291D235F90003CCEF6 /* NSTextAttachment+Util.m in Sources */,
+				EE44DF251D235F90003CCEF6 /* NSDate+Util.m in Sources */,
+				EE44DF261D235F90003CCEF6 /* NSDateFormatter+Singleton.m in Sources */,
+				EE44DF3A1D235F90003CCEF6 /* main.m in Sources */,
+				EE44DF2E1D235F90003CCEF6 /* UIImageView+LBBlurredImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,20 +541,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE44DEB51D235AA8003CCEF6 /* Main.storyboard */ = {
+		EE44DF191D235F90003CCEF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE44DEB61D235AA8003CCEF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EE44DEBA1D235AA8003CCEF6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE44DEBB1D235AA8003CCEF6 /* Base */,
+				EE44DF1A1D235F90003CCEF6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EE44DF1B1D235F90003CCEF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE44DF1C1D235F90003CCEF6 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,7 +646,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PrettySunshine/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrettySunshine/SupportingFile/Custom.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PrettySunshine/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Groupfly.PrettySunshine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +659,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PrettySunshine/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrettySunshine/SupportingFile/Custom.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PrettySunshine/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Groupfly.PrettySunshine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +733,7 @@
 				EE44DED81D235AA8003CCEF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE44DED91D235AA8003CCEF6 /* Build configuration list for PBXNativeTarget "PrettySunshineTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +742,7 @@
 				EE44DEDB1D235AA8003CCEF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE44DEDC1D235AA8003CCEF6 /* Build configuration list for PBXNativeTarget "PrettySunshineUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +751,7 @@
 				EE44DEDE1D235AA8003CCEF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

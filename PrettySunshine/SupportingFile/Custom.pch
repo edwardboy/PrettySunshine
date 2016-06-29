@@ -1,0 +1,23 @@
+//
+//  Custom.pch
+//  CustomTabbarController
+//
+//  Created by Groupfly on 16/6/28.
+//  Copyright © 2016年 Groupfly. All rights reserved.
+//
+
+#ifndef Custom_pch
+#define Custom_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "UIImage+Util.h"
+
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+#endif /* Custom_pch */
