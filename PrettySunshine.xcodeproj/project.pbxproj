@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6D235865FA6D1673F1841A /* libPods-PrettySunshine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B24DCFA5685D4C56169BB0 /* libPods-PrettySunshine.a */; };
 		EE40410A1D24A72800BF5501 /* EDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041091D24A72800BF5501 /* EDNavigationController.m */; };
-		EE40410D1D24EAB800BF5501 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40410C1D24EAB800BF5501 /* ScannerViewController.m */; };
+		EE4041531D250EF300BF5501 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041521D250EF300BF5501 /* UIView+Layout.m */; };
+		EE40415C1D250F4C00BF5501 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041561D250F4C00BF5501 /* HomeViewController.m */; };
+		EE40415D1D250F4C00BF5501 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041581D250F4C00BF5501 /* ScannerViewController.m */; };
+		EE4041641D25109B00BF5501 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041601D25109B00BF5501 /* ProfileViewController.m */; };
+		EE4041691D25127000BF5501 /* MyQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041661D25127000BF5501 /* MyQRCodeView.m */; };
+		EE40416D1D25127800BF5501 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40416C1D25127800BF5501 /* QRCodeGenerator.m */; };
+		EE4041701D25130400BF5501 /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40416F1D25130400BF5501 /* QRView.m */; };
+		EE4041731D25133C00BF5501 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041721D25133C00BF5501 /* InformationViewController.m */; };
+		EE4041761D2514E800BF5501 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041751D2514E800BF5501 /* UserModel.m */; };
+		EE4042181D2529EA00BF5501 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4042121D2529EA00BF5501 /* libzbar.a */; };
+		EE4042191D2529EA00BF5501 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4042141D2529EA00BF5501 /* zbar-back.png */; };
+		EE40421A1D2529EA00BF5501 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = EE4042151D2529EA00BF5501 /* zbar-help.html */; };
+		EE40421B1D2529EA00BF5501 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4042161D2529EA00BF5501 /* zbar-helpicons.png */; };
+		EE40421C1D2529EA00BF5501 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4042171D2529EA00BF5501 /* zbar-samples.png */; };
+		EE40421E1D252A5900BF5501 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE40421D1D252A5900BF5501 /* libiconv.2.4.0.tbd */; };
 		EE44DEC71D235AA8003CCEF6 /* PrettySunshineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */; };
 		EE44DED21D235AA8003CCEF6 /* PrettySunshineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DED11D235AA8003CCEF6 /* PrettySunshineUITests.m */; };
 		EE44DF1F1D235F90003CCEF6 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE11D235F90003CCEF6 /* DiscoverViewController.m */; };
-		EE44DF201D235F90003CCEF6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE41D235F90003CCEF6 /* HomeViewController.m */; };
 		EE44DF211D235F90003CCEF6 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE91D235F90003CCEF6 /* FAImageView.m */; };
 		EE44DF221D235F90003CCEF6 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEEB1D235F90003CCEF6 /* NSString+FontAwesome.m */; };
 		EE44DF231D235F90003CCEF6 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEED1D235F90003CCEF6 /* UIFont+FontAwesome.m */; };
@@ -32,7 +46,6 @@
 		EE44DF311D235F90003CCEF6 /* EDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF0A1D235F90003CCEF6 /* EDTabBarController.m */; };
 		EE44DF321D235F90003CCEF6 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF0D1D235F90003CCEF6 /* NewsViewController.m */; };
 		EE44DF331D235F90003CCEF6 /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF101D235F90003CCEF6 /* PopView.m */; };
-		EE44DF341D235F90003CCEF6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF131D235F90003CCEF6 /* ProfileViewController.m */; };
 		EE44DF351D235F90003CCEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44DF151D235F90003CCEF6 /* Assets.xcassets */; };
 		EE44DF361D235F90003CCEF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF181D235F90003CCEF6 /* AppDelegate.m */; };
 		EE44DF371D235F90003CCEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE44DF191D235F90003CCEF6 /* LaunchScreen.storyboard */; };
@@ -60,10 +73,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38B24DCFA5685D4C56169BB0 /* libPods-PrettySunshine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrettySunshine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA096170EFA5D97E6BD808E /* Pods-PrettySunshine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettySunshine.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrettySunshine/Pods-PrettySunshine.release.xcconfig"; sourceTree = "<group>"; };
+		D43550848A3E1F974F788585 /* Pods-PrettySunshine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettySunshine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrettySunshine/Pods-PrettySunshine.debug.xcconfig"; sourceTree = "<group>"; };
 		EE4041081D24A72800BF5501 /* EDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDNavigationController.h; sourceTree = "<group>"; };
 		EE4041091D24A72800BF5501 /* EDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDNavigationController.m; sourceTree = "<group>"; };
-		EE40410B1D24EAB800BF5501 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
-		EE40410C1D24EAB800BF5501 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
+		EE4041511D250EF300BF5501 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		EE4041521D250EF300BF5501 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		EE4041551D250F4C00BF5501 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EE4041561D250F4C00BF5501 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EE4041571D250F4C00BF5501 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
+		EE4041581D250F4C00BF5501 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
+		EE40415F1D25109B00BF5501 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		EE4041601D25109B00BF5501 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		EE4041651D25127000BF5501 /* MyQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQRCodeView.h; sourceTree = "<group>"; };
+		EE4041661D25127000BF5501 /* MyQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQRCodeView.m; sourceTree = "<group>"; };
+		EE40416B1D25127800BF5501 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		EE40416C1D25127800BF5501 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		EE40416E1D25130400BF5501 /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
+		EE40416F1D25130400BF5501 /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
+		EE4041711D25133C00BF5501 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		EE4041721D25133C00BF5501 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		EE4041741D2514E800BF5501 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		EE4041751D2514E800BF5501 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		EE4041FE1D2529EA00BF5501 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		EE4041FF1D2529EA00BF5501 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		EE4042001D2529EA00BF5501 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		EE4042011D2529EA00BF5501 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		EE4042021D2529EA00BF5501 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		EE4042031D2529EA00BF5501 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		EE4042041D2529EA00BF5501 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		EE4042051D2529EA00BF5501 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		EE4042061D2529EA00BF5501 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		EE4042071D2529EA00BF5501 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		EE4042081D2529EA00BF5501 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		EE4042091D2529EA00BF5501 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		EE40420A1D2529EA00BF5501 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		EE40420B1D2529EA00BF5501 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		EE40420C1D2529EA00BF5501 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		EE40420D1D2529EA00BF5501 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		EE40420E1D2529EA00BF5501 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		EE40420F1D2529EA00BF5501 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		EE4042101D2529EA00BF5501 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		EE4042111D2529EA00BF5501 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		EE4042121D2529EA00BF5501 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		EE4042141D2529EA00BF5501 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		EE4042151D2529EA00BF5501 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		EE4042161D2529EA00BF5501 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		EE4042171D2529EA00BF5501 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		EE40421D1D252A5900BF5501 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		EE44DEA91D235AA8003CCEF6 /* PrettySunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettySunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC21D235AA8003CCEF6 /* PrettySunshineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettySunshineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrettySunshineTests.m; sourceTree = "<group>"; };
@@ -73,8 +131,6 @@
 		EE44DED31D235AA8003CCEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE44DEE01D235F90003CCEF6 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		EE44DEE11D235F90003CCEF6 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
-		EE44DEE31D235F90003CCEF6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		EE44DEE41D235F90003CCEF6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		EE44DEE81D235F90003CCEF6 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
 		EE44DEE91D235F90003CCEF6 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
 		EE44DEEA1D235F90003CCEF6 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
@@ -113,8 +169,6 @@
 		EE44DF0D1D235F90003CCEF6 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		EE44DF0F1D235F90003CCEF6 /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
 		EE44DF101D235F90003CCEF6 /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
-		EE44DF121D235F90003CCEF6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		EE44DF131D235F90003CCEF6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		EE44DF151D235F90003CCEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE44DF171D235F90003CCEF6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE44DF181D235F90003CCEF6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +186,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE40421E1D252A5900BF5501 /* libiconv.2.4.0.tbd in Frameworks */,
+				EE4042181D2529EA00BF5501 /* libzbar.a in Frameworks */,
+				CE6D235865FA6D1673F1841A /* libPods-PrettySunshine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +209,168 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40BDC2E4D533139193B35F3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE40421D1D252A5900BF5501 /* libiconv.2.4.0.tbd */,
+				38B24DCFA5685D4C56169BB0 /* libPods-PrettySunshine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8015B90ADA1B6BA1EBDD272 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D43550848A3E1F974F788585 /* Pods-PrettySunshine.debug.xcconfig */,
+				9DA096170EFA5D97E6BD808E /* Pods-PrettySunshine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE40410E1D250D7A00BF5501 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				EE4041FA1D2529EA00BF5501 /* ZBarSDK */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		EE4041541D250F4C00BF5501 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE4041551D250F4C00BF5501 /* HomeViewController.h */,
+				EE4041561D250F4C00BF5501 /* HomeViewController.m */,
+				EE4041571D250F4C00BF5501 /* ScannerViewController.h */,
+				EE4041581D250F4C00BF5501 /* ScannerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE4041591D250F4C00BF5501 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		EE40415A1D250F4C00BF5501 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE40415B1D250F4C00BF5501 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE40416E1D25130400BF5501 /* QRView.h */,
+				EE40416F1D25130400BF5501 /* QRView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE40415E1D25109B00BF5501 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE40415F1D25109B00BF5501 /* ProfileViewController.h */,
+				EE4041601D25109B00BF5501 /* ProfileViewController.m */,
+				EE4041711D25133C00BF5501 /* InformationViewController.h */,
+				EE4041721D25133C00BF5501 /* InformationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE4041611D25109B00BF5501 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				EE40416B1D25127800BF5501 /* QRCodeGenerator.h */,
+				EE40416C1D25127800BF5501 /* QRCodeGenerator.m */,
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		EE4041621D25109B00BF5501 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE4041741D2514E800BF5501 /* UserModel.h */,
+				EE4041751D2514E800BF5501 /* UserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE4041631D25109B00BF5501 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE4041651D25127000BF5501 /* MyQRCodeView.h */,
+				EE4041661D25127000BF5501 /* MyQRCodeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE4041FA1D2529EA00BF5501 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EE4041FB1D2529EA00BF5501 /* Headers */,
+				EE4042121D2529EA00BF5501 /* libzbar.a */,
+				EE4042131D2529EA00BF5501 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		EE4041FB1D2529EA00BF5501 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				EE4041FC1D2529EA00BF5501 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		EE4041FC1D2529EA00BF5501 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EE4041FD1D2529EA00BF5501 /* zbar */,
+				EE4042071D2529EA00BF5501 /* zbar.h */,
+				EE4042081D2529EA00BF5501 /* ZBarCameraSimulator.h */,
+				EE4042091D2529EA00BF5501 /* ZBarCaptureReader.h */,
+				EE40420A1D2529EA00BF5501 /* ZBarHelpController.h */,
+				EE40420B1D2529EA00BF5501 /* ZBarImage.h */,
+				EE40420C1D2529EA00BF5501 /* ZBarImageScanner.h */,
+				EE40420D1D2529EA00BF5501 /* ZBarReaderController.h */,
+				EE40420E1D2529EA00BF5501 /* ZBarReaderView.h */,
+				EE40420F1D2529EA00BF5501 /* ZBarReaderViewController.h */,
+				EE4042101D2529EA00BF5501 /* ZBarSDK.h */,
+				EE4042111D2529EA00BF5501 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		EE4041FD1D2529EA00BF5501 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				EE4041FE1D2529EA00BF5501 /* Decoder.h */,
+				EE4041FF1D2529EA00BF5501 /* Exception.h */,
+				EE4042001D2529EA00BF5501 /* Image.h */,
+				EE4042011D2529EA00BF5501 /* ImageScanner.h */,
+				EE4042021D2529EA00BF5501 /* Processor.h */,
+				EE4042031D2529EA00BF5501 /* Scanner.h */,
+				EE4042041D2529EA00BF5501 /* Symbol.h */,
+				EE4042051D2529EA00BF5501 /* Video.h */,
+				EE4042061D2529EA00BF5501 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		EE4042131D2529EA00BF5501 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE4042141D2529EA00BF5501 /* zbar-back.png */,
+				EE4042151D2529EA00BF5501 /* zbar-help.html */,
+				EE4042161D2529EA00BF5501 /* zbar-helpicons.png */,
+				EE4042171D2529EA00BF5501 /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EE44DEA01D235AA7003CCEF6 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +378,8 @@
 				EE44DEC51D235AA8003CCEF6 /* PrettySunshineTests */,
 				EE44DED01D235AA8003CCEF6 /* PrettySunshineUITests */,
 				EE44DEAA1D235AA8003CCEF6 /* Products */,
+				B8015B90ADA1B6BA1EBDD272 /* Pods */,
+				40BDC2E4D533139193B35F3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,10 +438,10 @@
 		EE44DEE21D235F90003CCEF6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EE44DEE31D235F90003CCEF6 /* HomeViewController.h */,
-				EE44DEE41D235F90003CCEF6 /* HomeViewController.m */,
-				EE40410B1D24EAB800BF5501 /* ScannerViewController.h */,
-				EE40410C1D24EAB800BF5501 /* ScannerViewController.m */,
+				EE4041541D250F4C00BF5501 /* Controller */,
+				EE4041591D250F4C00BF5501 /* Manage */,
+				EE40415A1D250F4C00BF5501 /* Model */,
+				EE40415B1D250F4C00BF5501 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -228,6 +449,7 @@
 		EE44DEE51D235F90003CCEF6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EE40410E1D250D7A00BF5501 /* Lib */,
 				EE44DF3C1D23639D003CCEF6 /* Model */,
 				EE44DF3D1D23639D003CCEF6 /* View */,
 				EE44DEE61D235F90003CCEF6 /* Categories */,
@@ -239,6 +461,8 @@
 		EE44DEE61D235F90003CCEF6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				EE4041511D250EF300BF5501 /* UIView+Layout.h */,
+				EE4041521D250EF300BF5501 /* UIView+Layout.m */,
 				EE44DEE71D235F90003CCEF6 /* FontAwesome */,
 				EE44DEF01D235F90003CCEF6 /* NSDate+Util.h */,
 				EE44DEF11D235F90003CCEF6 /* NSDate+Util.m */,
@@ -315,8 +539,10 @@
 		EE44DF111D235F90003CCEF6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				EE44DF121D235F90003CCEF6 /* ProfileViewController.h */,
-				EE44DF131D235F90003CCEF6 /* ProfileViewController.m */,
+				EE40415E1D25109B00BF5501 /* Controller */,
+				EE4041611D25109B00BF5501 /* Manage */,
+				EE4041621D25109B00BF5501 /* Model */,
+				EE4041631D25109B00BF5501 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -366,9 +592,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE44DED61D235AA8003CCEF6 /* Build configuration list for PBXNativeTarget "PrettySunshine" */;
 			buildPhases = (
+				DA67964EF09180A971B14D42 /* [CP] Check Pods Manifest.lock */,
 				EE44DEA51D235AA8003CCEF6 /* Sources */,
 				EE44DEA61D235AA8003CCEF6 /* Frameworks */,
 				EE44DEA71D235AA8003CCEF6 /* Resources */,
+				6E7501E3FC446745B84CB095 /* [CP] Embed Pods Frameworks */,
+				D2103CE614F114C7939F3245 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -467,6 +696,10 @@
 				EE44DF381D235F90003CCEF6 /* Main.storyboard in Resources */,
 				EE44DF351D235F90003CCEF6 /* Assets.xcassets in Resources */,
 				EE44DF371D235F90003CCEF6 /* LaunchScreen.storyboard in Resources */,
+				EE40421C1D2529EA00BF5501 /* zbar-samples.png in Resources */,
+				EE40421A1D2529EA00BF5501 /* zbar-help.html in Resources */,
+				EE4042191D2529EA00BF5501 /* zbar-back.png in Resources */,
+				EE40421B1D2529EA00BF5501 /* zbar-helpicons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +719,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E7501E3FC446745B84CB095 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrettySunshine/Pods-PrettySunshine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2103CE614F114C7939F3245 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrettySunshine/Pods-PrettySunshine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA67964EF09180A971B14D42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE44DEA51D235AA8003CCEF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -493,23 +774,29 @@
 			files = (
 				EE44DF361D235F90003CCEF6 /* AppDelegate.m in Sources */,
 				EE44DF331D235F90003CCEF6 /* PopView.m in Sources */,
+				EE4041761D2514E800BF5501 /* UserModel.m in Sources */,
+				EE40415D1D250F4C00BF5501 /* ScannerViewController.m in Sources */,
 				EE44DF301D235F90003CCEF6 /* UIView+Util.m in Sources */,
 				EE44DF2B1D235F90003CCEF6 /* UIButton+Badge.m in Sources */,
+				EE4041641D25109B00BF5501 /* ProfileViewController.m in Sources */,
+				EE4041701D25130400BF5501 /* QRView.m in Sources */,
 				EE44DF221D235F90003CCEF6 /* NSString+FontAwesome.m in Sources */,
 				EE44DF2D1D235F90003CCEF6 /* UIImage+Util.m in Sources */,
 				EE44DF211D235F90003CCEF6 /* FAImageView.m in Sources */,
-				EE40410D1D24EAB800BF5501 /* ScannerViewController.m in Sources */,
 				EE44DF2C1D235F90003CCEF6 /* UIColor+Util.m in Sources */,
+				EE4041531D250EF300BF5501 /* UIView+Layout.m in Sources */,
 				EE44DF241D235F90003CCEF6 /* UIImage+FontAwesome.m in Sources */,
-				EE44DF341D235F90003CCEF6 /* ProfileViewController.m in Sources */,
 				EE44DF401D2363C5003CCEF6 /* AnimateSwitch.m in Sources */,
 				EE44DF321D235F90003CCEF6 /* NewsViewController.m in Sources */,
 				EE40410A1D24A72800BF5501 /* EDNavigationController.m in Sources */,
 				EE44DF271D235F90003CCEF6 /* NSString+pinyin.m in Sources */,
 				EE44DF1F1D235F90003CCEF6 /* DiscoverViewController.m in Sources */,
 				EE44DF231D235F90003CCEF6 /* UIFont+FontAwesome.m in Sources */,
+				EE40415C1D250F4C00BF5501 /* HomeViewController.m in Sources */,
+				EE40416D1D25127800BF5501 /* QRCodeGenerator.m in Sources */,
 				EE44DF2A1D235F90003CCEF6 /* UIBarButtonItem+Badge.m in Sources */,
-				EE44DF201D235F90003CCEF6 /* HomeViewController.m in Sources */,
+				EE4041731D25133C00BF5501 /* InformationViewController.m in Sources */,
+				EE4041691D25127000BF5501 /* MyQRCodeView.m in Sources */,
 				EE44DF311D235F90003CCEF6 /* EDTabBarController.m in Sources */,
 				EE44DF281D235F90003CCEF6 /* NSString+Util.m in Sources */,
 				EE44DF2F1D235F90003CCEF6 /* UIScrollView+ScalableCover.m in Sources */,
@@ -656,12 +943,17 @@
 		};
 		EE44DED71D235AA8003CCEF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43550848A3E1F974F788585 /* Pods-PrettySunshine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrettySunshine/SupportingFile/Custom.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/PrettySunshine/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PrettySunshine/Main/Lib/ZBarSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Groupfly.PrettySunshine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -669,12 +961,17 @@
 		};
 		EE44DED81D235AA8003CCEF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA096170EFA5D97E6BD808E /* Pods-PrettySunshine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrettySunshine/SupportingFile/Custom.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/PrettySunshine/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PrettySunshine/Main/Lib/ZBarSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Groupfly.PrettySunshine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
