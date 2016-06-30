@@ -4,7 +4,7 @@
 //
 //  Created by Groupfly on 16/6/27.
 //  Copyright © 2016年 Groupfly. All rights reserved.
-//
+//  视频专题（直播）
 
 #import "DiscoverViewController.h"
 
@@ -19,6 +19,11 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
 }
+
+/**
+ *  摄像头操作
+ */
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

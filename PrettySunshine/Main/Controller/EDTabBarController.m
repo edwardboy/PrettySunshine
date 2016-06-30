@@ -8,6 +8,8 @@
 
 #import "EDTabBarController.h"
 
+#import "EDNavigationController.h"
+
 #import "HomeViewController.h"
 #import "DiscoverViewController.h"
 #import "NewsViewController.h"
@@ -33,9 +35,9 @@
     ProfileViewController *profileVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"profile"];
     
     self.viewControllers = @[
-                             [self addChildViewController:[[NewsViewController alloc]init] title:@"首页" selectedImageName:@"tabbar-news-selected" normalImageName:@"tabbar-news"],
+                             [self addChildViewController:homeVC title:@"首页" selectedImageName:@"tabbar-news-selected" normalImageName:@"tabbar-news"],
                              
-                             [self addChildViewController:homeVC title:@"动弹" selectedImageName:@"tabbar-tweet-selected" normalImageName:@"tabbar-tweet"],
+                             [self addChildViewController:[[NewsViewController alloc]init] title:@"动弹" selectedImageName:@"tabbar-tweet-selected" normalImageName:@"tabbar-tweet"],
                              
                              [UIViewController new],
                              
@@ -116,7 +118,7 @@
     [vc.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
     
     // 添加导航控制器
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    EDNavigationController *nav = [[EDNavigationController alloc]initWithRootViewController:vc];
     
     [self addChildViewController:nav];
     

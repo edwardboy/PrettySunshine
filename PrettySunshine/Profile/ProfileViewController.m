@@ -20,6 +20,8 @@ static NSString *identifier = @"cell";
     
     UIImageView *_circleView;//类似头像的UIImageView
     UILabel *_textLabel;//类似昵称UILabel
+    
+    UIImageView *_navBackgtoundImageView;   // 导航栏背景图片
 }
 @property (nonatomic,strong) IBOutlet UITableView *listView;
 @end
@@ -38,7 +40,7 @@ static NSString *identifier = @"cell";
 - (void)setUpView{
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.automaticallyAdjustsScrollViewInsets = NO;
     self.listView.contentInset = UIEdgeInsetsMake(ImageHight, 0, 0, 0);
     
     _zoomImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"car.png"]];
@@ -63,6 +65,12 @@ static NSString *identifier = @"cell";
     _textLabel.text = @"my sunshine";
     _textLabel.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;//自动布局，自适应顶部
     [_zoomImageView addSubview:_textLabel];
+    
+    _navBackgtoundImageView = self.navigationController.navigationBar.subviews.firstObject;
+    _navBackgtoundImageView.alpha = 0;
+//    UIImage *img;
+    
+    NSLog(@"subviews===%@",self.navigationController.navigationBar.subviews);
     
 }
 
@@ -89,6 +97,7 @@ static NSString *identifier = @"cell";
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
+    // 缩放图片
     CGFloat y = scrollView.contentOffset.y ;//+NavigationBarHight;//根据实际选择加不加上NavigationBarHight（44、64 或者没有导航条）
     if (y < -ImageHight) {
         CGRect frame = _zoomImageView.frame;
@@ -96,7 +105,13 @@ static NSString *identifier = @"cell";
         frame.size.height =  -y;//contentMode = UIViewContentModeScaleAspectFill时，高度改变宽度也跟着改变
         _zoomImageView.frame = frame;
     }
+    // 设置导航栏透明色
+    CGFloat minAlphaOffset = - 64;
+    CGFloat maxAlphaOffset = 200;
     
+    CGFloat alpha = (y - minAlphaOffset) / 64;
+//    _barImageView.alpha = alpha;
+    _navBackgtoundImageView.alpha = alpha ;
 }
 
 - (void)didReceiveMemoryWarning {

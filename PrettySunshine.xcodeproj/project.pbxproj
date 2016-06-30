@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE40410A1D24A72800BF5501 /* EDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4041091D24A72800BF5501 /* EDNavigationController.m */; };
+		EE40410D1D24EAB800BF5501 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40410C1D24EAB800BF5501 /* ScannerViewController.m */; };
 		EE44DEC71D235AA8003CCEF6 /* PrettySunshineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */; };
 		EE44DED21D235AA8003CCEF6 /* PrettySunshineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DED11D235AA8003CCEF6 /* PrettySunshineUITests.m */; };
 		EE44DF1F1D235F90003CCEF6 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE11D235F90003CCEF6 /* DiscoverViewController.m */; };
@@ -58,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE4041081D24A72800BF5501 /* EDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDNavigationController.h; sourceTree = "<group>"; };
+		EE4041091D24A72800BF5501 /* EDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDNavigationController.m; sourceTree = "<group>"; };
+		EE40410B1D24EAB800BF5501 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
+		EE40410C1D24EAB800BF5501 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
 		EE44DEA91D235AA8003CCEF6 /* PrettySunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettySunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC21D235AA8003CCEF6 /* PrettySunshineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettySunshineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrettySunshineTests.m; sourceTree = "<group>"; };
@@ -213,6 +219,8 @@
 			children = (
 				EE44DEE31D235F90003CCEF6 /* HomeViewController.h */,
 				EE44DEE41D235F90003CCEF6 /* HomeViewController.m */,
+				EE40410B1D24EAB800BF5501 /* ScannerViewController.h */,
+				EE40410C1D24EAB800BF5501 /* ScannerViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -280,6 +288,8 @@
 			children = (
 				EE44DF091D235F90003CCEF6 /* EDTabBarController.h */,
 				EE44DF0A1D235F90003CCEF6 /* EDTabBarController.m */,
+				EE4041081D24A72800BF5501 /* EDNavigationController.h */,
+				EE4041091D24A72800BF5501 /* EDNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -488,11 +498,13 @@
 				EE44DF221D235F90003CCEF6 /* NSString+FontAwesome.m in Sources */,
 				EE44DF2D1D235F90003CCEF6 /* UIImage+Util.m in Sources */,
 				EE44DF211D235F90003CCEF6 /* FAImageView.m in Sources */,
+				EE40410D1D24EAB800BF5501 /* ScannerViewController.m in Sources */,
 				EE44DF2C1D235F90003CCEF6 /* UIColor+Util.m in Sources */,
 				EE44DF241D235F90003CCEF6 /* UIImage+FontAwesome.m in Sources */,
 				EE44DF341D235F90003CCEF6 /* ProfileViewController.m in Sources */,
 				EE44DF401D2363C5003CCEF6 /* AnimateSwitch.m in Sources */,
 				EE44DF321D235F90003CCEF6 /* NewsViewController.m in Sources */,
+				EE40410A1D24A72800BF5501 /* EDNavigationController.m in Sources */,
 				EE44DF271D235F90003CCEF6 /* NSString+pinyin.m in Sources */,
 				EE44DF1F1D235F90003CCEF6 /* DiscoverViewController.m in Sources */,
 				EE44DF231D235F90003CCEF6 /* UIFont+FontAwesome.m in Sources */,
