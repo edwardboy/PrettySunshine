@@ -10,6 +10,8 @@
 #import "MyQRCodeView.h"
 #import "UIView+Layout.h"
 
+#import "EDLoginViewController.h"
+
 @interface InformationViewController ()
 {
     MyQRCodeView *_qrView;
@@ -46,6 +48,19 @@
     
     [self.view addSubview:_qrView];
     
+    // 导航栏按钮
+     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"退出登录" style:UIBarButtonItemStyleDone target:self action:@selector(logout)];
+    
+}
+
+/**
+ *  退出登录
+ */
+- (void)logout{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    EDLoginViewController *login = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"login"];
+    window.rootViewController = login;
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -26,4 +26,7 @@
 @property (assign, nonatomic) CGFloat    height;
 @property (assign, nonatomic) CGSize    size;
 
+
+- (void)showshowCornerRadius:(CGFloat)cornerRadius;
+
 @end

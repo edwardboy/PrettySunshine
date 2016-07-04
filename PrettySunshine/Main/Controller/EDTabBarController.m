@@ -51,7 +51,7 @@
     // 添加中间➕按钮
     [self addCenterButton];
     
-    [[UITabBar appearance] setTintColor:[UIColor orangeColor]];
+    [[UITabBar appearance] setTintColor:kTitleColor];
     self.tabBar.backgroundColor = [UIColor whiteColor];
     
     UIImage *img = [UIImage imageFromColor:[UIColor whiteColor]];
@@ -73,7 +73,7 @@
     
     centerButton.frame = CGRectMake(origin.x - buttonSize.height/2, origin.y - buttonSize.height/2, buttonSize.height, buttonSize.height);
     centerButton.layer.cornerRadius = buttonSize.height/2;
-    [centerButton setBackgroundColor:[UIColor orangeColor]];
+    [centerButton setBackgroundColor:kTitleColor];
     [centerButton setImage:[UIImage imageNamed:@"team-create"] forState:UIControlStateNormal];
     
     [centerButton addTarget:self action:@selector(centerButtonClick) forControlEvents:UIControlEventTouchUpInside];
@@ -114,7 +114,7 @@
     
     // 设置tabBarItem的选中文字颜色
     NSMutableDictionary *selectedTextAttrs = [NSMutableDictionary dictionary];
-    selectedTextAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    selectedTextAttrs[NSForegroundColorAttributeName] = kTitleColor;
     [vc.tabBarItem setTitleTextAttributes:selectedTextAttrs forState:UIControlStateSelected];
     
     // 添加导航控制器

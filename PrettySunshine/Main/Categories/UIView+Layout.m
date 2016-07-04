@@ -154,4 +154,9 @@
     self.frame = frame;
 }
 
+- (void)showshowCornerRadius:(CGFloat)cornerRadius{
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = YES;
+}
+
 @end

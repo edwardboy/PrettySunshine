@@ -53,6 +53,11 @@
 		EE44DF391D235F90003CCEF6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE44DF1D1D235F90003CCEF6 /* Info.plist */; };
 		EE44DF3A1D235F90003CCEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF1E1D235F90003CCEF6 /* main.m */; };
 		EE44DF401D2363C5003CCEF6 /* AnimateSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF3F1D2363C5003CCEF6 /* AnimateSwitch.m */; };
+		EE5849E81D2606DC0070B58E /* EDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5849E61D2606DC0070B58E /* EDLoginViewController.m */; };
+		EE5849EC1D26072D0070B58E /* BasicLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5849EB1D26072D0070B58E /* BasicLoginView.m */; };
+		EE5849EE1D26073D0070B58E /* BasicLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5849ED1D26073D0070B58E /* BasicLoginView.xib */; };
+		EE5849F01D2666470070B58E /* qr_scan_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE5849EF1D2666470070B58E /* qr_scan_line@2x.png */; };
+		EE5849F31D2682C10070B58E /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5849F21D2682C10070B58E /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +184,14 @@
 		EE44DF3B1D23628D003CCEF6 /* Custom.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Custom.pch; sourceTree = "<group>"; };
 		EE44DF3E1D2363C5003CCEF6 /* AnimateSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateSwitch.h; sourceTree = "<group>"; };
 		EE44DF3F1D2363C5003CCEF6 /* AnimateSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateSwitch.m; sourceTree = "<group>"; };
+		EE5849E51D2606DC0070B58E /* EDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDLoginViewController.h; sourceTree = "<group>"; };
+		EE5849E61D2606DC0070B58E /* EDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDLoginViewController.m; sourceTree = "<group>"; };
+		EE5849EA1D26072D0070B58E /* BasicLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicLoginView.h; sourceTree = "<group>"; };
+		EE5849EB1D26072D0070B58E /* BasicLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicLoginView.m; sourceTree = "<group>"; };
+		EE5849ED1D26073D0070B58E /* BasicLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicLoginView.xib; sourceTree = "<group>"; };
+		EE5849EF1D2666470070B58E /* qr_scan_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_scan_line@2x.png"; sourceTree = "<group>"; };
+		EE5849F11D2682C10070B58E /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		EE5849F21D2682C10070B58E /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -514,6 +527,8 @@
 				EE44DF0A1D235F90003CCEF6 /* EDTabBarController.m */,
 				EE4041081D24A72800BF5501 /* EDNavigationController.h */,
 				EE4041091D24A72800BF5501 /* EDNavigationController.m */,
+				EE5849E51D2606DC0070B58E /* EDLoginViewController.h */,
+				EE5849E61D2606DC0070B58E /* EDLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -550,6 +565,7 @@
 		EE44DF141D235F90003CCEF6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EE5849EF1D2666470070B58E /* qr_scan_line@2x.png */,
 				EE44DF151D235F90003CCEF6 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -565,6 +581,8 @@
 				EE44DF1B1D235F90003CCEF6 /* Main.storyboard */,
 				EE44DF1D1D235F90003CCEF6 /* Info.plist */,
 				EE44DF1E1D235F90003CCEF6 /* main.m */,
+				EE5849F11D2682C10070B58E /* Utils.h */,
+				EE5849F21D2682C10070B58E /* Utils.m */,
 			);
 			path = SupportingFile;
 			sourceTree = "<group>";
@@ -581,6 +599,9 @@
 			children = (
 				EE44DF3E1D2363C5003CCEF6 /* AnimateSwitch.h */,
 				EE44DF3F1D2363C5003CCEF6 /* AnimateSwitch.m */,
+				EE5849EA1D26072D0070B58E /* BasicLoginView.h */,
+				EE5849EB1D26072D0070B58E /* BasicLoginView.m */,
+				EE5849ED1D26073D0070B58E /* BasicLoginView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -694,12 +715,14 @@
 			files = (
 				EE44DF391D235F90003CCEF6 /* Info.plist in Resources */,
 				EE44DF381D235F90003CCEF6 /* Main.storyboard in Resources */,
+				EE5849F01D2666470070B58E /* qr_scan_line@2x.png in Resources */,
 				EE44DF351D235F90003CCEF6 /* Assets.xcassets in Resources */,
 				EE44DF371D235F90003CCEF6 /* LaunchScreen.storyboard in Resources */,
 				EE40421C1D2529EA00BF5501 /* zbar-samples.png in Resources */,
 				EE40421A1D2529EA00BF5501 /* zbar-help.html in Resources */,
 				EE4042191D2529EA00BF5501 /* zbar-back.png in Resources */,
 				EE40421B1D2529EA00BF5501 /* zbar-helpicons.png in Resources */,
+				EE5849EE1D26073D0070B58E /* BasicLoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,8 +800,10 @@
 				EE4041761D2514E800BF5501 /* UserModel.m in Sources */,
 				EE40415D1D250F4C00BF5501 /* ScannerViewController.m in Sources */,
 				EE44DF301D235F90003CCEF6 /* UIView+Util.m in Sources */,
+				EE5849EC1D26072D0070B58E /* BasicLoginView.m in Sources */,
 				EE44DF2B1D235F90003CCEF6 /* UIButton+Badge.m in Sources */,
 				EE4041641D25109B00BF5501 /* ProfileViewController.m in Sources */,
+				EE5849E81D2606DC0070B58E /* EDLoginViewController.m in Sources */,
 				EE4041701D25130400BF5501 /* QRView.m in Sources */,
 				EE44DF221D235F90003CCEF6 /* NSString+FontAwesome.m in Sources */,
 				EE44DF2D1D235F90003CCEF6 /* UIImage+Util.m in Sources */,
@@ -797,6 +822,7 @@
 				EE44DF2A1D235F90003CCEF6 /* UIBarButtonItem+Badge.m in Sources */,
 				EE4041731D25133C00BF5501 /* InformationViewController.m in Sources */,
 				EE4041691D25127000BF5501 /* MyQRCodeView.m in Sources */,
+				EE5849F31D2682C10070B58E /* Utils.m in Sources */,
 				EE44DF311D235F90003CCEF6 /* EDTabBarController.m in Sources */,
 				EE44DF281D235F90003CCEF6 /* NSString+Util.m in Sources */,
 				EE44DF2F1D235F90003CCEF6 /* UIScrollView+ScalableCover.m in Sources */,
@@ -896,7 +922,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -934,7 +960,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -947,6 +973,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrettySunshine/SupportingFile/Custom.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/PrettySunshine/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -956,6 +984,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Groupfly.PrettySunshine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -965,6 +994,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrettySunshine/SupportingFile/Custom.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/PrettySunshine/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -974,6 +1005,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Groupfly.PrettySunshine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

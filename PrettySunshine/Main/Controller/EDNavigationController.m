@@ -22,7 +22,7 @@
     // 导航栏子控件颜色
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     // 导航栏背景色
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageFromColor:[UIColor orangeColor]] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageFromColor:kTitleColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
 }
 
 - (void)didReceiveMemoryWarning {
