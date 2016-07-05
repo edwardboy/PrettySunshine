@@ -24,6 +24,9 @@
 		EE40421B1D2529EA00BF5501 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4042161D2529EA00BF5501 /* zbar-helpicons.png */; };
 		EE40421C1D2529EA00BF5501 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4042171D2529EA00BF5501 /* zbar-samples.png */; };
 		EE40421E1D252A5900BF5501 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE40421D1D252A5900BF5501 /* libiconv.2.4.0.tbd */; };
+		EE43D9B11D2B7FE300D57028 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9B01D2B7FE300D57028 /* ChatRoomViewController.m */; };
+		EE43D9B41D2B80EF00D57028 /* EDPopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9B31D2B80EF00D57028 /* EDPopButton.m */; };
+		EE43D9BC1D2B8CA000D57028 /* EDAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9BB1D2B8CA000D57028 /* EDAnimatedTransitioning.m */; };
 		EE44DEC71D235AA8003CCEF6 /* PrettySunshineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */; };
 		EE44DED21D235AA8003CCEF6 /* PrettySunshineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DED11D235AA8003CCEF6 /* PrettySunshineUITests.m */; };
 		EE44DF1F1D235F90003CCEF6 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE11D235F90003CCEF6 /* DiscoverViewController.m */; };
@@ -127,6 +130,12 @@
 		EE4042161D2529EA00BF5501 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		EE4042171D2529EA00BF5501 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
 		EE40421D1D252A5900BF5501 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		EE43D9AF1D2B7FE300D57028 /* ChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
+		EE43D9B01D2B7FE300D57028 /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
+		EE43D9B21D2B80EF00D57028 /* EDPopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDPopButton.h; sourceTree = "<group>"; };
+		EE43D9B31D2B80EF00D57028 /* EDPopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDPopButton.m; sourceTree = "<group>"; };
+		EE43D9BA1D2B8CA000D57028 /* EDAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAnimatedTransitioning.h; sourceTree = "<group>"; };
+		EE43D9BB1D2B8CA000D57028 /* EDAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAnimatedTransitioning.m; sourceTree = "<group>"; };
 		EE44DEA91D235AA8003CCEF6 /* PrettySunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettySunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC21D235AA8003CCEF6 /* PrettySunshineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettySunshineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrettySunshineTests.m; sourceTree = "<group>"; };
@@ -384,6 +393,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		EE43D9B91D2B8CA000D57028 /* CustomAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				EE43D9BA1D2B8CA000D57028 /* EDAnimatedTransitioning.h */,
+				EE43D9BB1D2B8CA000D57028 /* EDAnimatedTransitioning.m */,
+			);
+			path = CustomAnimation;
+			sourceTree = "<group>";
+		};
 		EE44DEA01D235AA7003CCEF6 = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +480,7 @@
 		EE44DEE51D235F90003CCEF6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EE43D9B91D2B8CA000D57028 /* CustomAnimation */,
 				EE40410E1D250D7A00BF5501 /* Lib */,
 				EE44DF3C1D23639D003CCEF6 /* Model */,
 				EE44DF3D1D23639D003CCEF6 /* View */,
@@ -529,6 +548,8 @@
 				EE4041091D24A72800BF5501 /* EDNavigationController.m */,
 				EE5849E51D2606DC0070B58E /* EDLoginViewController.h */,
 				EE5849E61D2606DC0070B58E /* EDLoginViewController.m */,
+				EE43D9AF1D2B7FE300D57028 /* ChatRoomViewController.h */,
+				EE43D9B01D2B7FE300D57028 /* ChatRoomViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -602,6 +623,8 @@
 				EE5849EA1D26072D0070B58E /* BasicLoginView.h */,
 				EE5849EB1D26072D0070B58E /* BasicLoginView.m */,
 				EE5849ED1D26073D0070B58E /* BasicLoginView.xib */,
+				EE43D9B21D2B80EF00D57028 /* EDPopButton.h */,
+				EE43D9B31D2B80EF00D57028 /* EDPopButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -812,6 +835,7 @@
 				EE4041531D250EF300BF5501 /* UIView+Layout.m in Sources */,
 				EE44DF241D235F90003CCEF6 /* UIImage+FontAwesome.m in Sources */,
 				EE44DF401D2363C5003CCEF6 /* AnimateSwitch.m in Sources */,
+				EE43D9BC1D2B8CA000D57028 /* EDAnimatedTransitioning.m in Sources */,
 				EE44DF321D235F90003CCEF6 /* NewsViewController.m in Sources */,
 				EE40410A1D24A72800BF5501 /* EDNavigationController.m in Sources */,
 				EE44DF271D235F90003CCEF6 /* NSString+pinyin.m in Sources */,
@@ -821,8 +845,10 @@
 				EE40416D1D25127800BF5501 /* QRCodeGenerator.m in Sources */,
 				EE44DF2A1D235F90003CCEF6 /* UIBarButtonItem+Badge.m in Sources */,
 				EE4041731D25133C00BF5501 /* InformationViewController.m in Sources */,
+				EE43D9B41D2B80EF00D57028 /* EDPopButton.m in Sources */,
 				EE4041691D25127000BF5501 /* MyQRCodeView.m in Sources */,
 				EE5849F31D2682C10070B58E /* Utils.m in Sources */,
+				EE43D9B11D2B7FE300D57028 /* ChatRoomViewController.m in Sources */,
 				EE44DF311D235F90003CCEF6 /* EDTabBarController.m in Sources */,
 				EE44DF281D235F90003CCEF6 /* NSString+Util.m in Sources */,
 				EE44DF2F1D235F90003CCEF6 /* UIScrollView+ScalableCover.m in Sources */,

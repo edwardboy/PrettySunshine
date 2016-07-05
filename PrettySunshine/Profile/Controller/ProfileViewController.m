@@ -60,7 +60,8 @@ static NSString *identifier = @"cell";
     self.listView.delegate = self;
     self.listView.dataSource = self;
     //4.设置contentInset属性（上左下右 的值）
-    self.listView.contentInset = UIEdgeInsetsMake(ImageHight, 0, 0, 0);
+    self.listView.contentInset = UIEdgeInsetsMake(ImageHight + 49, 0, 0, 0);
+    
     //5.添加_tableView
     [self.view addSubview:self.listView];
     

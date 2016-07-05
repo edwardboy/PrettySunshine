@@ -8,6 +8,10 @@
 
 #import "HomeViewController.h"
 #import "ScannerViewController.h"
+#import "UIView+Layout.h"
+#import "ChatRoomViewController.h"
+
+#import "EDPopButton.h"
 
 
 static NSString *identifier = @"cell";
@@ -15,9 +19,10 @@ static NSString *identifier = @"cell";
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     CGFloat _beginOffsetY;   // 记录contentoffset的y
     BOOL _serviceHidden;    // 对客服按钮的hidden属性记录
+//    CGFloat _lastOffsetY;
 }
 @property (weak, nonatomic) IBOutlet UITableView *listView;
-@property (weak, nonatomic) UIButton *serviceButton;
+@property (weak, nonatomic) EDPopButton *serviceButton;
 @end
 
 
@@ -44,11 +49,25 @@ static NSString *identifier = @"cell";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"扫描" style:UIBarButtonItemStyleDone target:self action:@selector(scanner)];
     
     // 客服按钮
-    UIButton * keFu = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH - 85, SCREEN_HEIGHT - 64 - 80 - 10 - 49 , 80, 80)];
+    EDPopButton * keFu = [[EDPopButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH - 85, SCREEN_HEIGHT - 64 - 80 - 10 - 49 , 80, 80)];
+    keFu.currentVC = self;
     [keFu setImage:[UIImage imageNamed:@"kefu03"] forState:UIControlStateNormal];
     [keFu addTarget:self action:@selector(service) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:keFu];
     self.serviceButton = keFu;
+    
+    // 给客服按钮添加动画
+    CAKeyframeAnimation * pop = [CAKeyframeAnimation animation];
+    pop.keyPath     = @"transform.scale";
+    pop.values      = @[@0.1, @0.2, @0.3, @0.2, @0.1];
+    pop.additive    = YES;
+    
+    CAAnimationGroup * group = [CAAnimationGroup new];
+    group.animations = @[pop];
+    group.duration = 0.25;
+    group.removedOnCompletion = NO;
+    [self.serviceButton.layer addAnimation:group forKey:nil];
+
 }
 
 /**
@@ -65,6 +84,8 @@ static NSString *identifier = @"cell";
 - (void)service{
 //    NSLog(@"");
     DLog(@"启用客服");
+    
+    
 }
 
 #pragma mark -- UITableViewDataSource
@@ -73,7 +94,7 @@ static NSString *identifier = @"cell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 8;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -87,6 +108,24 @@ static NSString *identifier = @"cell";
     cell.textLabel.text = [NSString stringWithFormat:@"section-%ld,row-%ld",indexPath.section,indexPath.row];
     
     return cell;
+}
+
+#pragma mark -- UITableViewDelegate
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CGFloat offsetY = 80;
+    
+    [self startAnimationWithView:cell offset:offsetY duration:1];
+    
+}
+
+
+- (void)startAnimationWithView:(UIView *)view offset:(CGFloat)offset duration:(NSTimeInterval)duration{
+    view.transform = CGAffineTransformMakeTranslation(0, offset);
+    
+    [UIView animateWithDuration:duration animations:^{
+        view.transform = CGAffineTransformIdentity;
+    }];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -108,6 +147,9 @@ static NSString *identifier = @"cell";
 //        [self.navigationController setNavigationBarHidden:false animated:true];
 //    
 //    }
+    
+    [self navigationBarGradualChangeWithScrollView:scrollView titleView:nil movableView:nil offset:150 color:kTitleColor];
+    
     if (scrollView.contentOffset.y > _beginOffsetY && _serviceHidden == NO) {
         _serviceHidden = YES;
         [self hide];
@@ -116,13 +158,11 @@ static NSString *identifier = @"cell";
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-//    NSLog(@"scrollViewWillBeginDragging");
-    
     _beginOffsetY = scrollView.contentOffset.y;
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-//    NSLog(@"scrollViewDidEndDragging---%d",decelerate);
+    
     if (_serviceHidden == YES && !decelerate) {
         [self show];
         _serviceHidden = NO;
@@ -130,13 +170,11 @@ static NSString *identifier = @"cell";
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-//    NSLog(@"scrollViewDidEndDecelerating");
     if (_serviceHidden == YES) {
         [self show];
         _serviceHidden = NO;
     }
 }
-
 
 /**
  *  客服按钮显示
@@ -156,6 +194,29 @@ static NSString *identifier = @"cell";
         self.serviceButton.transform = CGAffineTransformIdentity;
         
     } completion:nil];
+}
+
+- (void)navigationBarGradualChangeWithScrollView:(UIScrollView *)scrollView titleView:(UIView *)titleView movableView:(UIView *)movableView offset:(CGFloat)offset color:(UIColor *)color {
+    
+    [self viewWillLayoutSubviews];
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+    [self.navigationController.navigationBar setUserInteractionEnabled:scrollView.contentOffset.y > offset ? YES : NO];
+    
+    float alpha = 1 - ((offset - scrollView.contentOffset.y) / offset);
+    [self setNavigationBarColor:color alpha:alpha];
+    
+    if (titleView) {
+        titleView  .hidden = scrollView.contentOffset.y > offset ? NO : YES;
+        movableView.hidden = !titleView.hidden;
+    }
+}
+
+- (void)setNavigationBarColor:(UIColor *)color alpha:(CGFloat)alpha {
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageFromColor:[color colorWithAlphaComponent:alpha > 0.95f ? 0.95f : alpha]] forBarMetrics:UIBarMetricsDefault];
+    if (self.navigationController.viewControllers.count > 1) {
+        UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 64)];
+        view.backgroundColor = color; [self.view addSubview:view];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

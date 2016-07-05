@@ -66,7 +66,7 @@
 /**
  *  登录
  */
-- (void)login:(UIButton *)button{
+- (void)login:(UIButton *)btn{
     
     
     if(self.userNameTextField.text.length == 0){
@@ -81,44 +81,49 @@
         
     }else{
         
-        [self animateWithLoginButton:button];
+//        [self animateWithLoginButton:button];
         
-        self.loginBlock(self.userNameTextField.text,self.psdTextField.text);
+        [UIView animateWithDuration:1.f animations:^{
+            [btn setTitle:@"OK" forState:UIControlStateNormal];
+            CGPoint center = btn.center;
+            btn.frame = CGRectMake(0, 0, 40, 40);
+            btn.center = center;
+            
+        }completion:^(BOOL finished) {
+            //
+            UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:(CGRect){CGPointMake(btn.frame.origin.x, btn.frame.origin.y),CGSizeMake(btn.frame.size.width, btn.frame.size.width)} cornerRadius:btn.frame.size.width * 0.5];
+            
+            CAShapeLayer *shapeLayerCircle = [CAShapeLayer layer];
+            _circleShapeLayer = shapeLayerCircle;
+            shapeLayerCircle.frame = CGRectZero;
+            shapeLayerCircle.lineWidth = 3.f;
+            shapeLayerCircle.strokeColor = kColor1.CGColor;
+            shapeLayerCircle.fillColor = [UIColor clearColor].CGColor;
+            shapeLayerCircle.path = path.CGPath;
+            [_backgroundView.layer addSublayer:shapeLayerCircle];
+            
+            CABasicAnimation *bas=[CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+            bas.duration=1;
+            bas.delegate=self;
+            bas.fromValue=[NSNumber numberWithInteger:0];
+            bas.toValue=[NSNumber numberWithInteger:1];
+            [shapeLayerCircle addAnimation:bas forKey:@"key"];
+            
+            [self performSelector:@selector(centerAddress) withObject:nil afterDelay:2.0];
+            
+        }];
+        
+        
         
     }
 }
 
-- (void)animateWithLoginButton:(UIButton *)btn{
-    DLog(@"登录按钮动画效果");
-    
-    [UIView animateWithDuration:1.f animations:^{
-        [btn setTitle:@"OK" forState:UIControlStateNormal];
-        CGPoint center = btn.center;
-        btn.frame = CGRectMake(0, 0, 40, 40);
-        btn.center = center;
-        
-    }completion:^(BOOL finished) {
-        //
-        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:(CGRect){CGPointMake(btn.frame.origin.x, btn.frame.origin.y),CGSizeMake(btn.frame.size.width, btn.frame.size.width)} cornerRadius:btn.frame.size.width * 0.5];
-        
-        CAShapeLayer *shapeLayerCircle = [CAShapeLayer layer];
-        _circleShapeLayer = shapeLayerCircle;
-        shapeLayerCircle.frame = CGRectZero;
-        shapeLayerCircle.lineWidth = 3.f;
-        shapeLayerCircle.strokeColor = kColor1.CGColor;
-        shapeLayerCircle.fillColor = [UIColor clearColor].CGColor;
-        shapeLayerCircle.path = path.CGPath;
-        [_backgroundView.layer addSublayer:shapeLayerCircle];
-        CABasicAnimation *bas=[CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-        bas.duration=1;
-        bas.delegate=self;
-        bas.fromValue=[NSNumber numberWithInteger:0];
-        bas.toValue=[NSNumber numberWithInteger:1];
-        [shapeLayerCircle addAnimation:bas forKey:@"key"];
-        [self performSelector:@selector(centerAddress) withObject:nil afterDelay:1];
-    }];
-
-}
+//- (void)animateWithLoginButton:(UIButton *)btn{
+//    DLog(@"登录按钮动画效果");
+//    
+//    
+//
+//}
 
 -(void)centerAddress{
     _loginButton.hidden = YES;
@@ -141,6 +146,8 @@
     maskLayerAnimation.delegate = self;
     maskLayerAnimation.timingFunction = [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     [maskLayer addAnimation:maskLayerAnimation forKey:@"path"];
+    
+    self.loginBlock(self.userNameTextField.text,self.psdTextField.text);
     
 }
 
