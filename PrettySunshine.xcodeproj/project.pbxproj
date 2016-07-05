@@ -27,6 +27,9 @@
 		EE43D9B11D2B7FE300D57028 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9B01D2B7FE300D57028 /* ChatRoomViewController.m */; };
 		EE43D9B41D2B80EF00D57028 /* EDPopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9B31D2B80EF00D57028 /* EDPopButton.m */; };
 		EE43D9BC1D2B8CA000D57028 /* EDAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9BB1D2B8CA000D57028 /* EDAnimatedTransitioning.m */; };
+		EE43D9BF1D2BB80100D57028 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9BE1D2BB80100D57028 /* HomeDetailViewController.m */; };
+		EE43D9C21D2BBE2200D57028 /* CustomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9C11D2BBE2200D57028 /* CustomPopView.m */; };
+		EE43D9C51D2BCD4100D57028 /* KACircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE43D9C41D2BCD4100D57028 /* KACircleProgressView.m */; };
 		EE44DEC71D235AA8003CCEF6 /* PrettySunshineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */; };
 		EE44DED21D235AA8003CCEF6 /* PrettySunshineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DED11D235AA8003CCEF6 /* PrettySunshineUITests.m */; };
 		EE44DF1F1D235F90003CCEF6 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DEE11D235F90003CCEF6 /* DiscoverViewController.m */; };
@@ -136,6 +139,12 @@
 		EE43D9B31D2B80EF00D57028 /* EDPopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDPopButton.m; sourceTree = "<group>"; };
 		EE43D9BA1D2B8CA000D57028 /* EDAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAnimatedTransitioning.h; sourceTree = "<group>"; };
 		EE43D9BB1D2B8CA000D57028 /* EDAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAnimatedTransitioning.m; sourceTree = "<group>"; };
+		EE43D9BD1D2BB80100D57028 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		EE43D9BE1D2BB80100D57028 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		EE43D9C01D2BBE2200D57028 /* CustomPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPopView.h; sourceTree = "<group>"; };
+		EE43D9C11D2BBE2200D57028 /* CustomPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPopView.m; sourceTree = "<group>"; };
+		EE43D9C31D2BCD4100D57028 /* KACircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KACircleProgressView.h; sourceTree = "<group>"; };
+		EE43D9C41D2BCD4100D57028 /* KACircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KACircleProgressView.m; sourceTree = "<group>"; };
 		EE44DEA91D235AA8003CCEF6 /* PrettySunshine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettySunshine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC21D235AA8003CCEF6 /* PrettySunshineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettySunshineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE44DEC61D235AA8003CCEF6 /* PrettySunshineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrettySunshineTests.m; sourceTree = "<group>"; };
@@ -262,6 +271,8 @@
 			children = (
 				EE4041551D250F4C00BF5501 /* HomeViewController.h */,
 				EE4041561D250F4C00BF5501 /* HomeViewController.m */,
+				EE43D9BD1D2BB80100D57028 /* HomeDetailViewController.h */,
+				EE43D9BE1D2BB80100D57028 /* HomeDetailViewController.m */,
 				EE4041571D250F4C00BF5501 /* ScannerViewController.h */,
 				EE4041581D250F4C00BF5501 /* ScannerViewController.m */,
 			);
@@ -287,6 +298,10 @@
 			children = (
 				EE40416E1D25130400BF5501 /* QRView.h */,
 				EE40416F1D25130400BF5501 /* QRView.m */,
+				EE43D9C01D2BBE2200D57028 /* CustomPopView.h */,
+				EE43D9C11D2BBE2200D57028 /* CustomPopView.m */,
+				EE43D9C31D2BCD4100D57028 /* KACircleProgressView.h */,
+				EE43D9C41D2BCD4100D57028 /* KACircleProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -826,6 +841,7 @@
 				EE5849EC1D26072D0070B58E /* BasicLoginView.m in Sources */,
 				EE44DF2B1D235F90003CCEF6 /* UIButton+Badge.m in Sources */,
 				EE4041641D25109B00BF5501 /* ProfileViewController.m in Sources */,
+				EE43D9BF1D2BB80100D57028 /* HomeDetailViewController.m in Sources */,
 				EE5849E81D2606DC0070B58E /* EDLoginViewController.m in Sources */,
 				EE4041701D25130400BF5501 /* QRView.m in Sources */,
 				EE44DF221D235F90003CCEF6 /* NSString+FontAwesome.m in Sources */,
@@ -836,6 +852,7 @@
 				EE44DF241D235F90003CCEF6 /* UIImage+FontAwesome.m in Sources */,
 				EE44DF401D2363C5003CCEF6 /* AnimateSwitch.m in Sources */,
 				EE43D9BC1D2B8CA000D57028 /* EDAnimatedTransitioning.m in Sources */,
+				EE43D9C51D2BCD4100D57028 /* KACircleProgressView.m in Sources */,
 				EE44DF321D235F90003CCEF6 /* NewsViewController.m in Sources */,
 				EE40410A1D24A72800BF5501 /* EDNavigationController.m in Sources */,
 				EE44DF271D235F90003CCEF6 /* NSString+pinyin.m in Sources */,
@@ -851,6 +868,7 @@
 				EE43D9B11D2B7FE300D57028 /* ChatRoomViewController.m in Sources */,
 				EE44DF311D235F90003CCEF6 /* EDTabBarController.m in Sources */,
 				EE44DF281D235F90003CCEF6 /* NSString+Util.m in Sources */,
+				EE43D9C21D2BBE2200D57028 /* CustomPopView.m in Sources */,
 				EE44DF2F1D235F90003CCEF6 /* UIScrollView+ScalableCover.m in Sources */,
 				EE44DF291D235F90003CCEF6 /* NSTextAttachment+Util.m in Sources */,
 				EE44DF251D235F90003CCEF6 /* NSDate+Util.m in Sources */,

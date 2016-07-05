@@ -31,13 +31,8 @@ static const CGFloat kRatio = 1.5f;
     [containView addSubview:toViewController.view];
     [containView addSubview:fromViewController.view];
     
-    //    UIView * endView = [UIView new];
-    //    endView.frame = self.frame;
     UIBezierPath * endPath = [UIBezierPath bezierPathWithOvalInRect:self.frame];
     
-    //    UIView * startView = [UIView new];
-    //    startView.center = endView.center;
-    //    startView.bounds = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height * kRatio, [UIScreen mainScreen].bounds.size.height * kRatio);
     UIBezierPath * startpath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.height * kRatio, [UIScreen mainScreen].bounds.size.height * kRatio)];
     
     CAShapeLayer * maskLayer = [CAShapeLayer layer];

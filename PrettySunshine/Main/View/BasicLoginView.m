@@ -109,7 +109,7 @@
             bas.toValue=[NSNumber numberWithInteger:1];
             [shapeLayerCircle addAnimation:bas forKey:@"key"];
             
-            [self performSelector:@selector(centerAddress) withObject:nil afterDelay:2.0];
+            [self performSelector:@selector(centerAddress) withObject:nil afterDelay:1.0];
             
         }];
         

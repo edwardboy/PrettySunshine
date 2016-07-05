@@ -13,6 +13,8 @@
 
 #import "EDPopButton.h"
 
+#import "HomeDetailViewController.h"
+
 
 static NSString *identifier = @"cell";
 
@@ -23,10 +25,32 @@ static NSString *identifier = @"cell";
 }
 @property (weak, nonatomic) IBOutlet UITableView *listView;
 @property (weak, nonatomic) EDPopButton *serviceButton;
+@property (nonatomic,strong) UIView *popView;   // 弹出视图
 @end
 
 
 @implementation HomeViewController
+/**
+ *  lazy load popView
+ *
+ *  @return a view type of UIView
+ */
+- (UIView *)popView{
+    
+    if (!_popView) {
+        
+        _popView = [[UIView alloc]initWithFrame:CGRectMake(0, -SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _popView.backgroundColor = [UIColor lightGrayColor];
+        
+    }
+    return _popView;
+}
+
+- (void)dealloc{
+    // 清空弹出框
+    [self.popView removeFromSuperview];
+    self.popView = nil;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -105,12 +129,32 @@ static NSString *identifier = @"cell";
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.imageView.image = [UIImage imageNamed:@"kefu03"];
+    
     cell.textLabel.text = [NSString stringWithFormat:@"section-%ld,row-%ld",indexPath.section,indexPath.row];
     
     return cell;
 }
 
 #pragma mark -- UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    HomeDetailViewController *detail = [HomeDetailViewController new];
+    
+    CGRect frame = [cell.imageView convertRect:cell.imageView.frame toView:self.view];
+    
+    CALayer *transitionLayer = [CALayer layer];
+    transitionLayer.frame = frame;
+    transitionLayer.contents = cell.imageView.layer.contents;
+    [detail.view.layer addSublayer:transitionLayer];
+    
+//    [self presentViewController:detail animated:YES completion:nil];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     
     CGFloat offsetY = 80;

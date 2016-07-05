@@ -65,7 +65,7 @@ static char kWhenTappedBlockKey;
 }
 
 /**
- *  手势点击事件
+ *  gesture
  */
 - (void)tapEvent{
     
@@ -112,11 +112,21 @@ static char kWhenTappedBlockKey;
     
     self.center = center;
 }
-
+/*
+ *  animatedTransitioning
+ */
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     EDAnimatedTransitioning * animatedTransitioning = [EDAnimatedTransitioning new];
     animatedTransitioning.frame = self.frame;
+//    animatedTransitioning.isPresent = NO;
     return animatedTransitioning;
 }
+
+//- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+//    EDAnimatedTransitioning * animatedTransitioning = [EDAnimatedTransitioning new];
+//    animatedTransitioning.frame = self.frame;
+//    animatedTransitioning.isPresent = YES;
+//    return animatedTransitioning;
+//}
 
 @end
