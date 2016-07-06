@@ -13,6 +13,15 @@
 + (UIColor *)colorWithHex:(int)hexValue alpha:(CGFloat)alpha;
 + (UIColor *)colorWithHex:(int)hexValue;
 
++ (UIColor *)colorWithHexString:(NSString *)hexString;
+
++ (UIColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
+
++ (UIColor *)colorWith8BitRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
+
++ (UIColor *)colorWith8BitRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(CGFloat)alpha;
+
+
 //+ (UIColor *)themeColor;
 //+ (UIColor *)nameColor;
 //+ (UIColor *)titleColor;

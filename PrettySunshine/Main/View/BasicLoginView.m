@@ -44,9 +44,8 @@
     self.secondLineView.backgroundColor = kTitleColor;
     
     // 添加登陆按钮
-    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat margin = CGRectGetMinX(self.userNameTextField.frame);
-    CGRect loginButtonFrame = CGRectMake(30 , CGRectGetMaxY(self.forgetPsdButton.frame) + 30, width - 60, 36);
+    
+    CGRect loginButtonFrame = CGRectMake(30 , CGRectGetMaxY(self.forgetPsdButton.frame) + 30, SCREEN_WIDTH - 60, 36);
     
     UIButton *loginButton = [[UIButton alloc]initWithFrame:loginButtonFrame];
     
@@ -60,7 +59,7 @@
     [self.backgroundView addSubview:loginButton];
     
     self.loginButton = loginButton;
-    DLog(@"%@--%@--margin-%.1f",NSStringFromCGRect(self.loginButton.frame),self.backgroundView.subviews,margin);
+//    DLog(@"%@--%@--margin-%.1f",NSStringFromCGRect(self.loginButton.frame),self.backgroundView.subviews,margin);
 }
 
 /**
@@ -80,8 +79,6 @@
         return;
         
     }else{
-        
-//        [self animateWithLoginButton:button];
         
         [UIView animateWithDuration:1.f animations:^{
             [btn setTitle:@"OK" forState:UIControlStateNormal];
@@ -109,60 +106,51 @@
             bas.toValue=[NSNumber numberWithInteger:1];
             [shapeLayerCircle addAnimation:bas forKey:@"key"];
             
-            [self performSelector:@selector(centerAddress) withObject:nil afterDelay:1.0];
+            self.loginBlock(self.userNameTextField.text,self.psdTextField.text);
+            
+//            [self performSelector:@selector(centerAddress) withObject:nil afterDelay:1.0];
             
         }];
-        
-        
-        
     }
 }
 
-//- (void)animateWithLoginButton:(UIButton *)btn{
-//    DLog(@"登录按钮动画效果");
+//-(void)centerAddress{
 //    
+//    _loginButton.hidden = YES;
 //    
-//
+//    CGFloat radius =hypotf(_backgroundView.bounds.size.width, _backgroundView.bounds.size.height);
+//    // 创建矩形内切圆曲线
+//    UIBezierPath *startCycle =  [UIBezierPath bezierPathWithOvalInRect:_loginButton.frame];
+//    // 创建弧形曲线
+//    UIBezierPath *endCycle = [UIBezierPath bezierPathWithArcCenter:_loginButton.center radius:radius startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+//    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+//    maskLayer.path = endCycle.CGPath;
+//    _backgroundView.layer.mask = maskLayer;
+//    
+//    CABasicAnimation *maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+////    maskLayerAnimation.delegate = self;
+//    //动画是加到layer上的，所以必须为CGPath，再将CGPath桥接为OC对象
+//    maskLayerAnimation.fromValue = (__bridge id)(startCycle.CGPath);
+//    maskLayerAnimation.toValue = (__bridge id)((endCycle.CGPath));
+//    maskLayerAnimation.duration = 1;
+//    maskLayerAnimation.delegate = self;
+//    maskLayerAnimation.timingFunction = [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//    [maskLayer addAnimation:maskLayerAnimation forKey:@"path"];
+//    
 //}
 
--(void)centerAddress{
-    _loginButton.hidden = YES;
-    
-    CGFloat radius =hypotf(_backgroundView.bounds.size.width, _backgroundView.bounds.size.height);
-    // 创建矩形内切圆曲线
-    UIBezierPath *startCycle =  [UIBezierPath bezierPathWithOvalInRect:_loginButton.frame];
-    // 创建弧形曲线
-    UIBezierPath *endCycle = [UIBezierPath bezierPathWithArcCenter:_loginButton.center radius:radius startAngle:0 endAngle:M_PI * 2 clockwise:YES];
-    CAShapeLayer *maskLayer = [CAShapeLayer layer];
-    maskLayer.path = endCycle.CGPath;
-    _backgroundView.layer.mask = maskLayer;
-    
-    CABasicAnimation *maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-//    maskLayerAnimation.delegate = self;
-    //动画是加到layer上的，所以必须为CGPath，再将CGPath桥接为OC对象
-    maskLayerAnimation.fromValue = (__bridge id)(startCycle.CGPath);
-    maskLayerAnimation.toValue = (__bridge id)((endCycle.CGPath));
-    maskLayerAnimation.duration = 1;
-    maskLayerAnimation.delegate = self;
-    maskLayerAnimation.timingFunction = [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    [maskLayer addAnimation:maskLayerAnimation forKey:@"path"];
-    
-    self.loginBlock(self.userNameTextField.text,self.psdTextField.text);
-    
-}
-
 #pragma mark - private method
--(UIImage *)createImageFromColor:(UIColor *)color imgSize:(CGSize)size
-{
-    CGRect frame = CGRectMake(0, 0, size.width, size.height);
-    UIGraphicsBeginImageContext(size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    CGContextFillRect(context, frame);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
-}
+//-(UIImage *)createImageFromColor:(UIColor *)color imgSize:(CGSize)size
+//{
+//    CGRect frame = CGRectMake(0, 0, size.width, size.height);
+//    UIGraphicsBeginImageContext(size);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    CGContextSetFillColorWithColor(context, color.CGColor);
+//    CGContextFillRect(context, frame);
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    return image;
+//}
 
 /**
  *  忘记密码
@@ -171,8 +159,6 @@
     if (self.forgetBlock) {
         self.forgetBlock();
     }
-//    _forgetBlock();
-    
 }
 
 /**
@@ -182,7 +168,6 @@
     if (self.registerBlock) {
         self.registerBlock();
     }
-//    _registerBlock();
 }
 
 @end

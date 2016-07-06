@@ -21,8 +21,8 @@
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     // 导航栏子控件颜色
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    // 导航栏背景色
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageFromColor:kTitleColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+//    // 导航栏背景色
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageFromColor:kTitleColor] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{

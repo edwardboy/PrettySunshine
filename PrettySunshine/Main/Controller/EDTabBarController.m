@@ -54,12 +54,14 @@
     [[UITabBar appearance] setTintColor:kTitleColor];
     self.tabBar.backgroundColor = [UIColor whiteColor];
     
-    UIImage *img = [UIImage imageFromColor:[UIColor whiteColor]];
+//    UIImage *img = [UIImage imageFromColor:[UIColor whiteColor]];
     
-    UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH , 49)];
-    imgView.image = img;
+//    UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH , 49)];
+//    imgView.image = img;
+    UIView *v = [[UIView alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH , 49)];
+    v.backgroundColor = [UIColor whiteColor];
     
-    [self.tabBar insertSubview:imgView atIndex:0];
+    [self.tabBar insertSubview:v atIndex:0];
     
 }
 

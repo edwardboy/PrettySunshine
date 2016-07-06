@@ -33,7 +33,7 @@
 
 - (void)setTrack
 {
-    _trackPath = [UIBezierPath bezierPathWithArcCenter:self.center radius:(self.bounds.size.width - _progressWidth)/ 2 startAngle:0 endAngle:M_PI * 2 clockwise:YES];;
+    _trackPath = [UIBezierPath bezierPathWithArcCenter:self.center radius:(self.bounds.size.width - _progressWidth)/ 2 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
     _trackLayer.path = _trackPath.CGPath;
 }
 /*
@@ -56,7 +56,12 @@
     
     // 画弧
     _progressPath = [UIBezierPath bezierPathWithArcCenter:self.center radius:(self.bounds.size.width - _progressWidth)/ 2 startAngle:- M_PI_2 endAngle:(M_PI * 2) * _progress - M_PI_2 clockwise:YES];
-    _progressLayer.path = _progressPath.CGPath;
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        
+        _progressLayer.path = _progressPath.CGPath;
+        
+    }];
 }
 
 

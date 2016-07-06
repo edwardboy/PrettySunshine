@@ -44,15 +44,16 @@
  */
 + (UIImage *)imageFromColor:(UIColor *)color{
     
-    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    CGRect rect = CGRectMake(0, 0, 1, 1);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);
     CGContextFillRect(context, rect);
-    UIImage*theImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return theImage;
+    return image;
 }
 
 - (UIImage *)cropToRect:(CGRect)rect

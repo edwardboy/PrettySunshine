@@ -59,6 +59,7 @@
 		EE44DF391D235F90003CCEF6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE44DF1D1D235F90003CCEF6 /* Info.plist */; };
 		EE44DF3A1D235F90003CCEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF1E1D235F90003CCEF6 /* main.m */; };
 		EE44DF401D2363C5003CCEF6 /* AnimateSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = EE44DF3F1D2363C5003CCEF6 /* AnimateSwitch.m */; };
+		EE4C83BF1D2CF5DD000BBEF9 /* UIViewController+NavigationBarColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4C83BE1D2CF5DD000BBEF9 /* UIViewController+NavigationBarColor.m */; };
 		EE5849E81D2606DC0070B58E /* EDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5849E61D2606DC0070B58E /* EDLoginViewController.m */; };
 		EE5849EC1D26072D0070B58E /* BasicLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5849EB1D26072D0070B58E /* BasicLoginView.m */; };
 		EE5849EE1D26073D0070B58E /* BasicLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5849ED1D26073D0070B58E /* BasicLoginView.xib */; };
@@ -202,6 +203,8 @@
 		EE44DF3B1D23628D003CCEF6 /* Custom.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Custom.pch; sourceTree = "<group>"; };
 		EE44DF3E1D2363C5003CCEF6 /* AnimateSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateSwitch.h; sourceTree = "<group>"; };
 		EE44DF3F1D2363C5003CCEF6 /* AnimateSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateSwitch.m; sourceTree = "<group>"; };
+		EE4C83BD1D2CF5DD000BBEF9 /* UIViewController+NavigationBarColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBarColor.h"; sourceTree = "<group>"; };
+		EE4C83BE1D2CF5DD000BBEF9 /* UIViewController+NavigationBarColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarColor.m"; sourceTree = "<group>"; };
 		EE5849E51D2606DC0070B58E /* EDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDLoginViewController.h; sourceTree = "<group>"; };
 		EE5849E61D2606DC0070B58E /* EDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDLoginViewController.m; sourceTree = "<group>"; };
 		EE5849EA1D26072D0070B58E /* BasicLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicLoginView.h; sourceTree = "<group>"; };
@@ -535,6 +538,8 @@
 				EE44DF051D235F90003CCEF6 /* UIScrollView+ScalableCover.m */,
 				EE44DF061D235F90003CCEF6 /* UIView+Util.h */,
 				EE44DF071D235F90003CCEF6 /* UIView+Util.m */,
+				EE4C83BD1D2CF5DD000BBEF9 /* UIViewController+NavigationBarColor.h */,
+				EE4C83BE1D2CF5DD000BBEF9 /* UIViewController+NavigationBarColor.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -847,6 +852,7 @@
 				EE44DF221D235F90003CCEF6 /* NSString+FontAwesome.m in Sources */,
 				EE44DF2D1D235F90003CCEF6 /* UIImage+Util.m in Sources */,
 				EE44DF211D235F90003CCEF6 /* FAImageView.m in Sources */,
+				EE4C83BF1D2CF5DD000BBEF9 /* UIViewController+NavigationBarColor.m in Sources */,
 				EE44DF2C1D235F90003CCEF6 /* UIColor+Util.m in Sources */,
 				EE4041531D250EF300BF5501 /* UIView+Layout.m in Sources */,
 				EE44DF241D235F90003CCEF6 /* UIImage+FontAwesome.m in Sources */,

@@ -21,6 +21,9 @@
     // Do any additional setup after loading the view from its nib.
     
     BasicLoginView *loginView = (BasicLoginView *)[[NSBundle mainBundle]loadNibNamed:@"BasicLoginView" owner:self options:nil].firstObject;
+    
+    __weak typeof(self)weakself = self;
+    
     loginView.loginBlock = ^(NSString *userName, NSString *psd){
     
         DLog(@"登录用户名:%@，密码:%@",userName,psd);
@@ -29,10 +32,10 @@
             
             EDTabBarController *tabbar = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"tabbar"];
             tabbar.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-            [self presentViewController:tabbar animated:true completion:nil];
+            [weakself presentViewController:tabbar animated:true completion:nil];
         }else{
             
-            [Utils showHudWithText:@"请正确输入用户信息" view:self.view model:MBProgressHUDModeText];
+            [Utils showHudWithText:@"请正确输入用户信息" view:weakself.view model:MBProgressHUDModeText];
             return;
         }
     };

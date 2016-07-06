@@ -9,7 +9,7 @@
 #import "InformationViewController.h"
 #import "MyQRCodeView.h"
 #import "UIView+Layout.h"
-
+#import "UIViewController+NavigationBarColor.h"
 #import "EDLoginViewController.h"
 
 @interface InformationViewController ()
@@ -20,15 +20,15 @@
 
 @implementation InformationViewController
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.hidesBottomBarWhenPushed = YES;
-    }
-    
-    return self;
-}
+//- (instancetype)init
+//{
+//    self = [super init];
+//    if (self) {
+//        self.hidesBottomBarWhenPushed = YES;
+//    }
+//    
+//    return self;
+//}
 
 
 - (void)viewDidLoad {
@@ -36,21 +36,23 @@
     
     self.navigationItem.title = @"我的二维码";
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    [self setNavigationBarColor:kTitleColor alpha:1];
+    
+    self.view.backgroundColor = [UIColor lightGrayColor];
     
     // view 的高度 = view宽 + 上面高 + 下面高
     _qrView = [[MyQRCodeView alloc] initWithFrame:
-                            CGRectMake(20, 40, self.view.width - 20 * 2, self.view.width - 20 * 2 + 60 + 30 + 30)];
+                            CGRectMake(20, 64, self.view.width - 20 * 2, self.view.width - 20 * 2 + 60 + 30 + 30)];
     
     if ([UIScreen mainScreen].bounds.size.height <= 480) { // 4s 重新调整下高度
-        _qrView.frame = CGRectMake(20, 20, self.view.width - 20 * 2, self.view.width - 20 * 2 + 60 + 30 + 10);
+        _qrView.frame = CGRectMake(20, 64, self.view.width - 20 * 2, self.view.width - 20 * 2 + 60 + 30 + 10);
     }
     
     [self.view addSubview:_qrView];
     
     // 导航栏按钮
      self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"退出登录" style:UIBarButtonItemStyleDone target:self action:@selector(logout)];
-    
+ 
 }
 
 /**

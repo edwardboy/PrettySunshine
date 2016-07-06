@@ -15,6 +15,8 @@
 
 #import "HomeDetailViewController.h"
 
+#import "UIViewController+NavigationBarColor.h"
+
 
 static NSString *identifier = @"cell";
 
@@ -30,6 +32,7 @@ static NSString *identifier = @"cell";
 
 
 @implementation HomeViewController
+
 /**
  *  lazy load popView
  *
@@ -52,19 +55,45 @@ static NSString *identifier = @"cell";
     self.popView = nil;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self scrollViewDidScroll:self.listView];
+    
+    //  给客服按钮添加动画
+    CAKeyframeAnimation * pop = [CAKeyframeAnimation animation];
+    pop.keyPath     = @"transform.scale";
+    pop.values      = @[@0.1, @0.2, @0.3, @0.2, @0.1];
+    pop.additive    = YES;
+    
+    CAAnimationGroup * group = [CAAnimationGroup new];
+    group.animations = @[pop];
+    group.duration = 0.25;
+    group.removedOnCompletion = NO;
+    [self.serviceButton.layer addAnimation:group forKey:nil];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    [self.navigationController.navigationBar setShadowImage:[UIImage imageFromColor:[UIColor clearColor]]];
+    
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [self setupView];
     
+    NSLog(@"self.navigationController.viewControllers---%@",self.navigationController.viewControllers);
+    
 }
+
 /**
  *  设置界面
  */
 - (void)setupView{
-
-    self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSLog(@"setupView---");
+    self.view.backgroundColor = [UIColor lightGrayColor];
     self.listView.rowHeight = 80;
     
     [self.listView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
@@ -79,18 +108,6 @@ static NSString *identifier = @"cell";
     [keFu addTarget:self action:@selector(service) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:keFu];
     self.serviceButton = keFu;
-    
-    // 给客服按钮添加动画
-    CAKeyframeAnimation * pop = [CAKeyframeAnimation animation];
-    pop.keyPath     = @"transform.scale";
-    pop.values      = @[@0.1, @0.2, @0.3, @0.2, @0.1];
-    pop.additive    = YES;
-    
-    CAAnimationGroup * group = [CAAnimationGroup new];
-    group.animations = @[pop];
-    group.duration = 0.25;
-    group.removedOnCompletion = NO;
-    [self.serviceButton.layer addAnimation:group forKey:nil];
 
 }
 
@@ -140,16 +157,16 @@ static NSString *identifier = @"cell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
     HomeDetailViewController *detail = [HomeDetailViewController new];
     
-    CGRect frame = [cell.imageView convertRect:cell.imageView.frame toView:self.view];
-    
-    CALayer *transitionLayer = [CALayer layer];
-    transitionLayer.frame = frame;
-    transitionLayer.contents = cell.imageView.layer.contents;
-    [detail.view.layer addSublayer:transitionLayer];
+//    CGRect frame = [cell.imageView convertRect:cell.imageView.frame toView:self.view];
+//    
+//    CALayer *transitionLayer = [CALayer layer];
+//    transitionLayer.frame = frame;
+//    transitionLayer.contents = cell.imageView.layer.contents;
+//    [detail.view.layer addSublayer:transitionLayer];
     
 //    [self presentViewController:detail animated:YES completion:nil];
     [self.navigationController pushViewController:detail animated:YES];
@@ -192,7 +209,7 @@ static NSString *identifier = @"cell";
 //    
 //    }
     
-    [self navigationBarGradualChangeWithScrollView:scrollView titleView:nil movableView:nil offset:150 color:kTitleColor];
+    [self navigationBarGradualChangeWithScrollView:scrollView offset:180 color:kTitleColor];
     
     if (scrollView.contentOffset.y > _beginOffsetY && _serviceHidden == NO) {
         _serviceHidden = YES;
@@ -238,29 +255,6 @@ static NSString *identifier = @"cell";
         self.serviceButton.transform = CGAffineTransformIdentity;
         
     } completion:nil];
-}
-
-- (void)navigationBarGradualChangeWithScrollView:(UIScrollView *)scrollView titleView:(UIView *)titleView movableView:(UIView *)movableView offset:(CGFloat)offset color:(UIColor *)color {
-    
-    [self viewWillLayoutSubviews];
-    [self setAutomaticallyAdjustsScrollViewInsets:NO];
-    [self.navigationController.navigationBar setUserInteractionEnabled:scrollView.contentOffset.y > offset ? YES : NO];
-    
-    float alpha = 1 - ((offset - scrollView.contentOffset.y) / offset);
-    [self setNavigationBarColor:color alpha:alpha];
-    
-    if (titleView) {
-        titleView  .hidden = scrollView.contentOffset.y > offset ? NO : YES;
-        movableView.hidden = !titleView.hidden;
-    }
-}
-
-- (void)setNavigationBarColor:(UIColor *)color alpha:(CGFloat)alpha {
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageFromColor:[color colorWithAlphaComponent:alpha > 0.95f ? 0.95f : alpha]] forBarMetrics:UIBarMetricsDefault];
-    if (self.navigationController.viewControllers.count > 1) {
-        UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 64)];
-        view.backgroundColor = color; [self.view addSubview:view];
-    }
 }
 
 - (void)didReceiveMemoryWarning {

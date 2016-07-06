@@ -10,6 +10,8 @@
 #import "InformationViewController.h"
 #import "UserModel.h"
 
+#import "UIViewController+NavigationBarColor.h"
+
 static NSString *identifier = @"cell";
 
 #define NavigationBarHight 64.0f
@@ -34,6 +36,12 @@ static NSString *identifier = @"cell";
 @implementation ProfileViewController
 
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self scrollViewDidScroll:self.listView];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -55,12 +63,13 @@ static NSString *identifier = @"cell";
     //1.定义全局tableView
     
     //2.初始化_tableView
-    self.listView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.listView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT- 49) style:UITableViewStyleGrouped];
     //3.设置代理，头文件也要包含 UITableViewDelegate,UITableViewDataSource
     self.listView.delegate = self;
     self.listView.dataSource = self;
+//    self.listView.rowHeight
     //4.设置contentInset属性（上左下右 的值）
-    self.listView.contentInset = UIEdgeInsetsMake(ImageHight + 49, 0, 0, 0);
+    self.listView.contentInset = UIEdgeInsetsMake(ImageHight + 10, 0, 0, 0);
     
     //5.添加_tableView
     [self.view addSubview:self.listView];
@@ -75,6 +84,9 @@ static NSString *identifier = @"cell";
     _zoomImageView.contentMode = UIViewContentModeScaleAspectFill;//重点（不设置那将只会被纵向拉伸）
     
     [self.listView addSubview:_zoomImageView];
+    
+    [self.navigationController.navigationBar setShadowImage:[UIImage imageFromColor:[UIColor clearColor]]];
+    
     
 //    _zoomImageView.autoresizesSubviews = YES;
     
@@ -110,11 +122,11 @@ static NSString *identifier = @"cell";
 #pragma mark -- UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 15;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -140,6 +152,9 @@ static NSString *identifier = @"cell";
         frame.size.height =  -y;//contentMode = UIViewContentModeScaleAspectFill时，高度改变宽度也跟着改变
         _zoomImageView.frame = frame;
     }
+    
+    [self navigationBarGradualChangeWithScrollView:scrollView offset:180 color:kTitleColor];
 }
+
 
 @end
